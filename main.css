@@ -54,7 +54,7 @@ a:hover {
 .hero {	
 	position: relative;
 	height: 795px;
-	background: url(img/hero_small.jpg) no-repeat;
+	background: url(img/hero.jpg) no-repeat;
 	background-size: cover;
 }
 .heading {
