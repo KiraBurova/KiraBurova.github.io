@@ -28,6 +28,7 @@ button {
 button:hover {
 	background: white;
 	color: black;
+	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
 h1, span {
@@ -49,6 +50,7 @@ a {
 }
 a:hover {
 	color: black;
+	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
 .hero {	
@@ -150,11 +152,12 @@ a:hover#menu-icon {
 #search-icon:active
  {
 	background: url(img/advanced_search_active.png);
+	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
 #advanced_search {display: none;}
 #advanced_search input 
-{
+{	float: left;
 	width: 30%;
 	height: 100px;
 	background: #cbe0f4;
@@ -223,6 +226,7 @@ h2 {
 
 .listing-wrapper article:hover {
 	border: 1px solid #bfd9f2;
+	-webkit-transition: all 0.6s ease-in;
 	transition: all 0.6s ease-in;
 }
 .more_listings{
@@ -334,6 +338,7 @@ footer p {
 		background: url(img/close_menu_icon.png) center;
 		width: 19px;
 		height: 19px;
+		-webkit-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
 
 	}
@@ -405,6 +410,7 @@ footer p {
  @media screen and (max-width: 440px) {
  	#search {
  		font-size: 12px;
+ 		-webkit-transition: all 0.2s ease-in;
  		transition: all 0.2s ease-in;
  	}
  	.listing-wrapper {
@@ -424,3 +430,4 @@ footer p {
  }
 }
 
+ 
