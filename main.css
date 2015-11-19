@@ -78,6 +78,13 @@ header {
     width: 25%;
     display: inline-block;
     margin-right: 40px;
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
 }
 .feature-item:last-child {
     margin-right: 0;
@@ -224,6 +231,12 @@ footer {
 
 .left-footer p {
     line-height: 150px
+}
+.showing {
+    opacity: 1!important;
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px)
 }
 @media screen and (max-width: 855px) {
     .heading {
