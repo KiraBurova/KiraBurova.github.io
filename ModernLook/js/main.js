@@ -6,7 +6,7 @@ $(document).ready( function() {
 });
 
 var wScroll = this.pageYOffset;
-var figures = document.querySelectorAll('.about .person-1');
+var figures = document.querySelectorAll('.row .person-1');
 
   function showPic(i) {
     setTimeout(function(){
