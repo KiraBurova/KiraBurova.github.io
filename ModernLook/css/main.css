@@ -150,6 +150,10 @@ ul li a:hover,:active {
 .person-1, .person-2 {
     background: #111111;
     color: white;
+    opacity: 0;
+}
+.showing {
+    opacity: 1;
 }
 .person-1 span,
 .person-2 span {
