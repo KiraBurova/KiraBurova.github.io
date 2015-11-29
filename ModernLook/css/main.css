@@ -121,7 +121,7 @@ header {
     padding-left: 80px;
 }
 .logo {
-        background: url(img/logo.png) 50% 0 no-repeat;
+        background: url(../img/logo.png) 50% 0 no-repeat;
         background-size: 61px 67px;
         width: 61px;
         height: 67px;
@@ -140,7 +140,7 @@ ul li a:hover,:active {
 }
 .img-wrapper {
     height: 300px;
-    background: url(img/snowboard.jpg) no-repeat 50% 0;
+    background: url(../img/snowboard.jpg) no-repeat 50% 0;
     background-size: cover;
 }
 .about {
@@ -166,7 +166,7 @@ ul li a:hover,:active {
     float: left;
     width: 50%;
     height: 430px;
-    background: url(img/person1.jpg) no-repeat;
+    background: url(../img/person1.jpg) no-repeat;
     background-size: auto 100%;
 }
 .right {
@@ -178,12 +178,12 @@ ul li a:hover,:active {
     float: left;
     width: 50%;
     height: 430px;
-    background: url(img/person2.jpg) no-repeat
+    background: url(../img/person2.jpg) no-repeat
 }
 
 .blog {
     padding-top: 100px;
-    background: #3a3146 url(img/blog_bg.jpg) no-repeat
+    background: #3a3146 url(../img/blog_bg.jpg) no-repeat
 }
 .blog-wrapper {
     display: -webkit-box;
@@ -263,7 +263,7 @@ ul li a:hover,:active {
 .picture-bg-1 .img-wrapper {
     height: 1100px;
     width: 100%;
-    background: url(img/lighthouse.jpg) no-repeat 50% 0;
+    background: url(../img/lighthouse.jpg) no-repeat 50% 0;
     background-size: cover;
 }
 .contact {
@@ -301,7 +301,7 @@ input[type="submit"].button-primary:hover {
     height: 64px;
     margin: -5px -2px 0 0;
     display: inline-block;
-    background: url(img/social.png);
+    background: url(../img/social.png);
     opacity: 0.5;
 }
 .icons .icon:hover,
