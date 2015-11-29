@@ -10,7 +10,7 @@ var figures = document.querySelectorAll('.about .person-1');
 
   function showPic(i) {
     setTimeout(function(){
-      figures[i].classList.add('is-showing');
+      figures[i].classList.add('showing');
     }, (700 * (Math.exp(i * 0.14)) - 700));
   }
 
