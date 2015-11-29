@@ -14,7 +14,7 @@ var figures = document.querySelectorAll('.row .person-1');
     }, (700 * (Math.exp(i * 0.14)) - 700));
   }
 
-  if(wScroll > document.querySelector('.row').scrollHeight + document.body.scrollTop - (window.innerHeight / 1.2)) {
+  if(wScroll > document.querySelector('.row').scrollHeight + document.body.scrollTop - (window.innerHeight / 0.5)) {
 
     for(var i = 0; i < figures.length; i++) {
       showPic(i);
