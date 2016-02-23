@@ -237,7 +237,8 @@ input[type="button"] {
 
 a {
   color: #ffffff;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 1.125em; }
 
 a:hover,
 a:focus {
@@ -258,23 +259,27 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #FFF498; }
 
-.gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff; }
 
-.huge, h1 {
-  font-size: 2.857em;
+h1 {
+  font-size: 3.486em;
   line-height: 1.05;
   letter-spacing: -1px; }
 
-.large, h2 {
-  font-size: 2em;
+h2 {
+  font-size: 2.857em;
   line-height: 1.14; }
 
-.bigger, h3 {
-  font-size: 1.143em;
+h3 {
+  font-size: 2.143em;
   font-weight: bold;
   line-height: 1.38; }
+
+span {
+  font-size: 2em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
 
 p {
   font-size: 1.143em; }
@@ -284,11 +289,12 @@ header {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  height: 600px;
+  height: 555px;
   width: 100%;
   padding: 30px 0;
   background: url("../img/header_bg.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   header .menu ul {
     display: flex;
     justify-content: space-between;
@@ -299,6 +305,22 @@ header {
       header .menu ul li:last-child {
         margin-left: 0; }
   header .text {
-    display: flex; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 145px; }
+    header .text a {
+      border: 2px solid #ffffff;
+      background: transparent;
+      padding: 10px 50px;
+      margin: 45px 0;
+      width: 15%; }
+      header .text a:hover {
+        background: #ffffff;
+        color: #000000;
+        transition: all 0.4s ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */
