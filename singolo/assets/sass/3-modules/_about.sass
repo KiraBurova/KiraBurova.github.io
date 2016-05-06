@@ -1,0 +1,25 @@
+.figure-wrap
+	display: flex
+	figure
+		margin-left: 0
+		margin-right: 9%
+		&:last-child
+			margin-right: 0
+		img, p
+			padding: 15px 0
+		img
+			width: 100%
+.social-icons span
+	cursor: pointer
+	color: $storm-gray
+	margin-right: 0.2em
+	&:hover
+		color: lighten($storm-gray, 10%)
+
+/*Media Queries*/
+@media screen and ( max-width: 930px )
+	.figure-wrap 
+		flex-wrap: wrap
+		figure
+			width: 100%!important
+			margin: 1em 0

@@ -1,0 +1,138 @@
+/*
+  SASS variables are information about icon's compiled state, stored under its original file name
+
+  .icon-home
+    width: $icon-home-width
+
+  The large array-like variables contain all information about a single icon
+  $icon-home: x y offset_x offset_y width height total_width total_height image_path
+
+  At the bottom of this section, we provide information about the spritesheet itself
+  $spritesheet: width height image $spritesheet-sprites
+  */
+$bubble-services-name: 'bubble-services'
+$bubble-services-x: 0px
+$bubble-services-y: 0px
+$bubble-services-offset-x: 0px
+$bubble-services-offset-y: 0px
+$bubble-services-width: 59px
+$bubble-services-height: 59px
+$bubble-services-total-width: 177px
+$bubble-services-total-height: 118px
+$bubble-services-image: '/assets/img/sprite.png'
+$bubble-services: (0px, 0px, 0px, 0px, 59px, 59px, 177px, 118px, '/assets/img/sprite.png', 'bubble-services', )
+$bulb-services-name: 'bulb-services'
+$bulb-services-x: 59px
+$bulb-services-y: 0px
+$bulb-services-offset-x: -59px
+$bulb-services-offset-y: 0px
+$bulb-services-width: 59px
+$bulb-services-height: 59px
+$bulb-services-total-width: 177px
+$bulb-services-total-height: 118px
+$bulb-services-image: '/assets/img/sprite.png'
+$bulb-services: (59px, 0px, -59px, 0px, 59px, 59px, 177px, 118px, '/assets/img/sprite.png', 'bulb-services', )
+$heart-services-name: 'heart-services'
+$heart-services-x: 0px
+$heart-services-y: 59px
+$heart-services-offset-x: 0px
+$heart-services-offset-y: -59px
+$heart-services-width: 59px
+$heart-services-height: 59px
+$heart-services-total-width: 177px
+$heart-services-total-height: 118px
+$heart-services-image: '/assets/img/sprite.png'
+$heart-services: (0px, 59px, 0px, -59px, 59px, 59px, 177px, 118px, '/assets/img/sprite.png', 'heart-services', )
+$pen-services-name: 'pen-services'
+$pen-services-x: 59px
+$pen-services-y: 59px
+$pen-services-offset-x: -59px
+$pen-services-offset-y: -59px
+$pen-services-width: 59px
+$pen-services-height: 59px
+$pen-services-total-width: 177px
+$pen-services-total-height: 118px
+$pen-services-image: '/assets/img/sprite.png'
+$pen-services: (59px, 59px, -59px, -59px, 59px, 59px, 177px, 118px, '/assets/img/sprite.png', 'pen-services', )
+$phone-services-name: 'phone-services'
+$phone-services-x: 118px
+$phone-services-y: 0px
+$phone-services-offset-x: -118px
+$phone-services-offset-y: 0px
+$phone-services-width: 59px
+$phone-services-height: 59px
+$phone-services-total-width: 177px
+$phone-services-total-height: 118px
+$phone-services-image: '/assets/img/sprite.png'
+$phone-services: (118px, 0px, -118px, 0px, 59px, 59px, 177px, 118px, '/assets/img/sprite.png', 'phone-services', )
+$star-services-name: 'star-services'
+$star-services-x: 118px
+$star-services-y: 59px
+$star-services-offset-x: -118px
+$star-services-offset-y: -59px
+$star-services-width: 59px
+$star-services-height: 59px
+$star-services-total-width: 177px
+$star-services-total-height: 118px
+$star-services-image: '/assets/img/sprite.png'
+$star-services: (118px, 59px, -118px, -59px, 59px, 59px, 177px, 118px, '/assets/img/sprite.png', 'star-services', )
+$spritesheet-width: 177px
+$spritesheet-height: 118px
+$spritesheet-image: '/assets/img/sprite.png'
+$spritesheet-sprites: ($bubble-services, $bulb-services, $heart-services, $pen-services, $phone-services, $star-services, )
+$spritesheet: (177px, 118px, '/assets/img/sprite.png', $spritesheet-sprites, )
+
+/*
+  The provided mixins are intended to be used with the array-like variables
+
+  .icon-home
+    @include sprite-width($icon-home)
+
+  .icon-email
+    @include sprite($icon-email)
+
+  Example usage in HTML:
+    `display: block` sprite:
+    <div class="icon-home"></div>
+
+  To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+    // CSS
+    .icon {
+      display: inline-block;
+    }
+
+    // HTML
+    <i class="icon icon-home"></i>
+  */
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+/*
+  The `sprites` mixin generates identical output to the CSS template
+    but can be overridden inside of SASS
+
+  @include sprites($spritesheet-sprites)
+  */
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)

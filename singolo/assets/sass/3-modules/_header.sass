@@ -1,0 +1,53 @@
+.top-header
+	background: $charade
+	padding: 2.8em 0 2.4em
+	text-transform: uppercase
+	border-bottom: 6px solid $bright-gray
+.header-wrap
+	display: flex
+	justify-content: space-between
+	align-items: center
+	.logo
+		font-size: 1.7em
+		color: $white
+		cursor: pointer
+		span
+			color: $burnt-sienna 
+	.menu ul 
+		display: flex
+		li
+			list-style: none 
+			margin-right: 2em
+			a
+				color: $white
+				&:hover
+					color: $burnt-sienna
+					transition: all 0.3s ease-in-out
+#burger
+	display: none
+
+/*Media Queries*/
+@media screen and (max-width: 760px )
+	.header-wrap
+		flex-wrap: wrap
+	.logo
+		width: 100%
+		text-align: center
+		padding-bottom: 2%
+	.top-header .header-wrap .menu
+		width: 100%
+		text-align: center
+		ul
+			flex-direction: column
+			height: 0
+			overflow: hidden
+			li
+				padding: 3% 0
+				margin-right: 0
+				border-bottom: 1px solid lighten($charade, 10%)
+	#burger
+		display: flex
+		font-size: 2em
+		cursor: pointer
+	.top-header .header-wrap .menu ul.open
+		height: auto

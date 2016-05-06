@@ -1,0 +1,56 @@
+@mixin placeholder
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
+
+#quote
+	background: $burnt-sienna
+	color: $white
+	padding: 70px 0
+	h1, h2
+		color: $white
+	.quote-wrap	
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		.right, .left
+			flex: 1 0 50%
+			margin-top: 50px
+		.left 
+			padding-right: 2%
+			input, textarea
+				width: 100%	
+				background: $roman
+				color: $froly
+				padding: 10px
+				margin: 10px 0
+				border: 1px solid transparent
+				@include placeholder 
+					color:  $froly
+				&:focus
+					outline: none !important	
+					border: 1px solid $froly
+
+			.error
+				border: 1px solid darken($froly, 70%)		
+	p
+		padding: 30px 0
+	address
+		font-style: normal
+		i
+			padding-right: 10px
+		a 
+			color: $white
+			&:hover
+				color: darken($white, 20%)
+
+/*Media Queries*/
+@media screen and ( max-width: 970px )
+	#quote .quote-wrap .right,
+	#quote .quote-wrap .left
+		flex: 1 0 51%

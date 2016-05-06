@@ -1,0 +1,42 @@
+.services-wrap 
+	display: flex
+	margin-top: 40px
+	flex-wrap: wrap
+.services-item
+	width: 33.3%
+	display: flex
+	margin-bottom: 40px
+.content
+	flex: 1
+	padding: 0 5%
+	h2
+		padding: 0
+.icon
+	margin: 0
+.design
+	.icon
+		@include sprite($pen-services)
+.ideas
+	.icon
+		@include sprite($bulb-services)
+.love
+	.icon
+		@include sprite($heart-services)
+.layout
+	.icon
+		@include sprite($phone-services)
+.support
+	.icon
+		@include sprite($bubble-services)
+.star
+	.icon
+		@include sprite($star-services)
+
+
+/*Media Queries*/
+@media screen and ( max-width: 1038px )
+	.services-item
+		width: 50%
+@media screen and ( max-width: 722px )
+	.services-item
+		width: 100%		
