@@ -474,37 +474,37 @@ button {
   margin: 0; }
 
 .design .icon {
-  background-image: url(/assets/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: -59px -59px;
   width: 59px;
   height: 59px; }
 
 .ideas .icon {
-  background-image: url(/assets/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: -59px 0px;
   width: 59px;
   height: 59px; }
 
 .love .icon {
-  background-image: url(/assets/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px -59px;
   width: 59px;
   height: 59px; }
 
 .layout .icon {
-  background-image: url(/assets/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: -118px 0px;
   width: 59px;
   height: 59px; }
 
 .support .icon {
-  background-image: url(/assets/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: 0px 0px;
   width: 59px;
   height: 59px; }
 
 .star .icon {
-  background-image: url(/assets/img/sprite.png);
+  background-image: url(../img/sprite.png);
   background-position: -118px -59px;
   width: 59px;
   height: 59px; }
