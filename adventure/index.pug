@@ -1,0 +1,126 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width")
+		title 
+		link(rel="stylesheet", href="assets/css/main.css")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
+		link(rel="stylesheet", href="assets/libs/slick/slick/slick.css")
+		link(rel="stylesheet", href="assets/libs/slick/slick/slick-theme.css")
+	body
+		header.header
+			.container
+				.header-inner
+					a.logo Adventurer
+					#burger
+						i.fa.fa-bars
+					ul.header__menu-list
+						li.menu-list__item
+							a(href="#").menu-list__link Home
+						li.menu-list__item
+							a(href="#").menu-list__link About
+						li.menu-list__item
+							a(href="#").menu-list__link Services
+						li.menu-list__item
+							a(href="#").menu-list__link Contact
+						li.menu-list__item
+							a(href="#").menu-list__link FAQ
+						li.menu-list__item
+							a(href="#").menu-list__link Support
+		
+		section.slider
+			.slide
+				h1 Adventurer
+				span MURI, A TEMPLATE AT THE HEART OF THE BEAUTY
+				a(href="#") See more
+			.slide
+				h1 Hello!
+				span MURI, A TEMPLATE AT THE HEART OF THE BEAUTY
+				a(href="#") See more
+
+		section.about
+			mixin progress(text, className)
+				.progress__graph
+					.progress__bar(class=className)
+						p #{text}
+			.container
+				h2.about__title Who we are
+				p.about__dscr Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+				.about-inner
+					.about__tabs
+						h4.tabs__title.active Lorem ipsum dolor sit amet
+						ul.tabs__list
+							li.list__item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend
+							li.list__item Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.
+						h4.tabs__title Lorem ipsum dolor sit amet
+						ul.tabs__list
+							li.list__item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend
+							li.list__item Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.
+						h4.tabs__title Lorem ipsum dolor sit amet
+						ul.tabs__list
+							li.list__item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend
+							li.list__item Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.
+
+					.about__progress
+						+progress('Web Design  80%', 'one')
+						+progress('Html and Css  60%', 'two')
+						+progress('Graphic Design  75%', 'three')
+						+progress('Wordpress  90%', 'four')
+						+progress('Joomla  50%', 'five')
+						+progress('Php and MysQI  85%', 'six')
+		
+		footer.footer
+			.container
+				.footer-inner
+					.footer-inner__left
+						a.logo ADVENTURER
+						p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.
+						.left__social
+							a(href="") 
+								<i class="fa fa-facebook"></i>
+							a(href="")
+								<i class="fa fa-google"></i>
+							a(href="")
+								<i class="fa fa-twitter"></i>
+							a(href="")
+								<i class="fa fa-vimeo"></i>
+							a(href="")
+								<i class="fa fa-linkedin"></i>
+					.footer-inner__middle
+						.middle__features
+							h4 Some features
+							ul.features__list
+								li.list__item Lorem ipsum dolor sit amet
+								li.list__item Lorem ipsum dolor sit amet
+								li.list__item Lorem ipsum dolor sit amet
+								li.list__item Lorem ipsum dolor sit amet
+						.middle__tags
+							mixin tags(text)
+								span #{text}
+							h4 Tags
+							.tags__list
+								+tags('Corporate')
+								+tags('Agency')
+								+tags('Portfolio')
+								+tags('Blog')
+								+tags('Elegant')
+								+tags('Professional')
+								+tags('Business')
+
+					.footer-inner__right
+						h4 Flicker Posts
+						.right__posts
+							img(src="assets/img/flicker-1.png", alt="")
+							img(src="assets/img/flicker-2.png", alt="")
+							img(src="assets/img/flicker-3.png", alt="")
+							img(src="assets/img/flicker-4.png", alt="")
+							img(src="assets/img/flicker-5.png", alt="")
+							img(src="assets/img/flicker-6.png", alt="")
+							img(src="assets/img/flicker-7.png", alt="")
+							img(src="assets/img/flicker-8.png", alt="")
+
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js")
+	script(src="assets/js/functions.js")
+	script(src="assets/libs/slick/slick/slick.min.js")

@@ -1,0 +1,41 @@
+.footer
+	margin-top: em(100)
+	padding: em(50) 0
+	background: $codegray
+	color: $white
+	h4
+		padding-bottom: em(20)
+	.footer-inner
+		display: flex
+
+		&__left
+			flex: 1
+			.logo
+				font-family: 'PT Sans', sans-serif
+				font-weight: 700
+				font-size: em(34)
+				cursor: pointer
+				color: $cinnabar
+				&:hover
+					color: $white
+			p
+				color: $white
+				padding-bottom: em(40)
+		.left__social
+			a
+				background-color: $white
+				padding: em(15)
+				margin-right: 2px
+
+				&:last-child
+					margin-right: 0
+		
+
+		&__middle
+			display: flex
+
+			.middle__features
+				margin-right: 10px
+			.list__item
+				list-style: none
+				padding-bottom: em(15)
