@@ -24,6 +24,7 @@
 
 	.about-inner
 		display: flex
+
 	.tabs__title
 		position: relative
 		display: block
@@ -46,7 +47,6 @@
 		border: 1px solid $gray
 		border-top: none
 		margin-top: 0
-		margin-bottom: 5px
 		background: $alabaster
 		color: $mine-shaft
 
@@ -62,11 +62,13 @@
 
 		&:nth-child(2n)
 			padding-top: 0
+
 		&:first-child
 			padding-bottom: 0	
 
 	.active
 		background: $cinnabar
+		
 	.active + .tabs__list
 		display: block
 

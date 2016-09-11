@@ -6,12 +6,6 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-	
-	.logo
-		font-family: 'PT Sans', sans-serif
-		font-weight: 700
-		font-size: em(34)
-		cursor: pointer
 
 	&__menu-list
 		display: flex
@@ -23,14 +17,21 @@
 
 		&:last-child
 			margin-right: 0
-			
+.logo
+	font-family: 'PT Sans', sans-serif
+	font-weight: 700
+	font-size: em(34)
+	cursor: pointer
+
 #burger
 	display: none
 	padding: 5%
+
 @media screen and (min-width: 760px )
 	.header
 		&__menu-list
 			display: flex!important	
+			
 @media screen and (max-width: 760px )
 	.header-inner
 		flex-wrap: wrap
