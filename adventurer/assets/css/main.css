@@ -357,7 +357,7 @@ p {
     cursor: pointer; } }
 .slider {
   background: #CCCCCC;
-  background-image: url("/assets/img/slide.jpg");
+  background-image: url("../img/slide.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   padding: 10.71429em 0; }
@@ -541,11 +541,11 @@ p {
   .services h3 {
     text-transform: uppercase; }
   .services .odd {
-    background-image: url("/assets/img/services-one.png");
+    background-image: url("../img/services-one.png");
     background-position: center 15%;
     background-repeat: no-repeat; }
   .services .even {
-    background-image: url("/assets/img/services-two.png");
+    background-image: url("../img/services-two.png");
     background-position: center 15%;
     background-repeat: no-repeat; }
 
