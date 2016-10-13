@@ -1,0 +1,145 @@
+@import 'vars'
+@import 'normalize'
+@import 'fonts'
+@import 'common'
+
+//HEADER
+
+.header
+	padding-top: 80px
+
+	&__section
+		display: flex
+
+	&__info
+		padding-left: 80px
+	
+	p
+		line-height: 2
+		font-size: 1.5rem
+		font-weight: 300
+	
+	span
+		font-size: 2rem
+		color: $osloGrey
+		font-weight: 400
+	
+
+
+///SOCIAL
+@mixin before($posX)
+	&:before
+		display: block
+		content: ''
+		width: 30px
+		height: 24px
+		background: url(/img/sprite.png) no-repeat
+		background-position: $posX 0
+
+.social
+	padding-top: 20px
+
+	&__section
+		display: flex
+		justify-content: space-between
+
+	&__item
+		display: flex
+		align-items: center
+		list-style: none
+		padding-bottom: 10px
+
+		&:nth-child(3n)
+			padding-bottom: 0
+
+	.tele
+		@include before(0)
+	.env
+		@include before(-25px)
+	.skype
+		@include before(-49px)
+	.fb
+		@include before(-71px)
+	.gh
+		@include before(-96px)
+	.db
+		@include before(-120px)
+	.bh
+		@include before(-168px)
+	.med
+		@include before(-194px)
+
+//MAIN
+// POSITION
+.main
+	padding-top: 60px
+
+	&__position
+		display: flex
+		align-items: center
+		justify-content: space-between
+	
+	.position
+		&__descr
+			flex: 0 0 50%	
+
+	&__skill
+		padding-top: 60px 
+		display: flex
+
+	.skill
+		&__skills
+			flex: 1
+		&__tech
+			flex: 0 0 50%
+
+	&__experience
+		padding-top: 20px
+		display: flex
+		align-items: center
+
+	.experience
+		&__exp
+			flex: 1 0 50%
+
+
+
+@media screen and (max-width: 880px )
+.header
+	&__section
+		flex-direction: column
+		text-align: center
+
+	&__info
+		padding-left: 0	
+
+@media screen and (max-width: 710px )
+.social
+	&__section
+		flex-direction: column
+		justify-content: center
+		font-size: 1.5rem
+
+	ul
+		padding: 20px 0
+		border-bottom: 1px solid $thunder	
+
+.experience
+	flex-direction: column
+
+	&__exp
+		display: flex
+
+		h2
+			margin-right: 20px
+		ul
+			margin-right: 20px
+
+			&:last-child
+				margin-right: 0
+
+@media screen and (max-width: 550px )
+	.experience
+		&__exp
+			display: block
+			text-align: center
