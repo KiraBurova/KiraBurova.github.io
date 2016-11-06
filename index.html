@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title> </title> 
+  </head>
+
+  <body>
+  <div class="text">
+  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro distinctio alias a laborum enim blanditiis natus magnam asperiores veniam vero, reiciendis laboriosam excepturi placeat repellat non, error, optio maxime eos.</p>
+  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sit quidem corporis. Quo quidem voluptatum dolores ratione, unde aut sit praesentium nulla alias nam tempora, impedit maiores culpa asperiores explicabo?</p>
+  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat asperiores perferendis, id accusamus iure adipisci. Atque aperiam doloribus, nihil sunt voluptas, iure a voluptatibus, natus pariatur cum quaerat quis sit.</p>
+  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat asperiores perferendis, id accusamus iure adipisci. Atque aperiam doloribus, nihil sunt voluptas, iure a voluptatibus, natus pariatur cum quaerat quis sit.</p>
+  </div>
+  <script type="text/javascript">
+    (function (a, b, c, d, e, f, g, h) {
+         g = b.createElement(c);
+         g.src = d;
+         g.type = "application/javascript";
+         g.async = !0;
+         h = b.getElementsByTagName(c)[0];
+         h.parentNode.insertBefore(g, h);
+         a[f] = [];
+         a[e] = function () {
+             a[f].push(Array.prototype.slice.apply(arguments));
+        }
+    }) (window, document, "script", (document.location.protocol === "https:"
+? "https:" : "http:") + "//cdn01.nativeroll.tv/js/seedr-player.min.js", "SeedrPlayer",
+"seedrInit");
+</script>
+<script>
+    SeedrPlayer(
+        document.getElementsByClassName('text')[0],
+        50,
+        {
+            gid: "581ef5b95f366e6b4a8b4834", debug: true,
+            onError: function (e) { console.log(e); }
+        }
+    );
+</script>
+	</body>
+</html>
