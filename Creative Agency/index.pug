@@ -1,0 +1,155 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width")
+		title 
+		link(rel="stylesheet", href="css/style.css")
+	body
+		header.header
+			.container
+				.header__top
+					.header__section
+						a.header__item.header__logo Crazy #[span way]
+					
+					.header__section
+						#burger
+							span
+						ul.header__item.header__menu.menu
+							li.menu__item
+								a(href="#").menu__link Home
+							li.menu__item
+								a(href="#").menu__link About
+							li.menu__item
+								a(href="#").menu__link Services
+							li.menu__item
+								a(href="#").menu__link Contact
+							li.menu__item
+								a(href="#").menu__link FAQ
+							li.menu__item
+								a(href="#").menu__link Support
+				
+				.header__bottom
+					.header__section.main
+						h1 We are Creative Agency
+						img(src="/img/header_phone.png", alt="" class='main__image')
+						.main__section
+							p.main__dscr Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							button.btn Click here
+
+		section.who
+			.container
+				.who__inner
+					.who__section.left
+						h2 Who we are
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, ex! Nihil, architecto hic illo totam, qui incidunt tempora obcaecati aspernatur molestias quibusdam magni omnis voluptas et modi quae error sunt.
+						button.btn Click here
+					.who__section.right
+						img(src="/img/who.png", alt="")
+
+		section.slider
+			.slider__slide.active
+				.slider__feed
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+					span.feed__name John Doe
+					span.feed__job Graphic Designer
+			.slider__slide
+			.slider__slide
+			.slider__controllers
+				span#one.active
+				span#two
+				span#three
+
+		mixin services(headline, text, className)
+			.items__item.item
+				.item__pic(class=className)
+				.item__text
+					span #{headline}
+					p #{text}
+		section.services
+			.container
+				.services__inner
+					h2 Services 
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+					.services__section.items
+						+services('Lorem ipsum dolor sit amet', 'consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', 'one')
+						+services('Lorem ipsum dolor sit amet', 'consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', 'two')
+						+services('Lorem ipsum dolor sit amet', 'consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', 'three')
+						+services('Lorem ipsum dolor sit amet', 'consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.', 'four')
+		
+
+		mixin news(img, headline, text)
+			.news__article
+				img(src = img)
+				span #{headline}
+				p #{text}
+				button.btn Click here	
+		section.news
+			.container
+				.news__inner
+					h2 Latest News
+					.news__section
+						+news('/img/news_bg_1.jpg', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
+						+news('/img/news_bg_2.jpg', 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.')
+
+		section.social
+			.social__inner
+				.container
+					.social__icons
+						ul.social__list
+							a(href='#').social__fb
+							a(href='#').social__g
+							a(href='#').social__vk
+							a(href='#').social__yt
+							a(href='#').social__in
+							a(href='#').social__digg
+							a(href='#').social__b
+
+		section.find
+			.container
+				h2 How to find us
+				.find__inner
+					.find__contact
+						span Lorem ipsum dolor sit amet
+						.find__list
+							.find__item
+								.find__pic.envelope
+								.find__wrap
+									span.find__main Email
+									span.find__dscr free@psdfreebies.com
+							.find__item
+								.find__pic.phone
+								.find__wrap
+									span.find__main Call us!
+									span.find__dscr +123 456 7890
+									span.find__dscr +123 456 7890
+							.find__item
+								.find__pic.map
+								.find__wrap
+									span.find__main Address
+									span.find__dscr 123, Main Road, New City, My Country 123456
+
+					.find__form
+						span Say hello!
+						form.form
+							.form__item
+								label(for='name') Name
+								input(type='text' name='name' id='name')
+							.form__item
+								label(for='email') Email
+								input(type='email' name='email' id='email')
+							.form__item
+								label(for='tel') Phone
+								input(type='tel' name='tel' id='tel')
+							.form__item
+								label(for='textarea')  Message
+								textarea(id = 'textarea' name = 'textarea')
+							button.btn Submit		
+
+		footer.footer
+			span.footer__dscr Designed By PSDFreebies.com
+			span.footer__dscr COPYRIGHT 201
+
+	script(src='/js/functions.js')
