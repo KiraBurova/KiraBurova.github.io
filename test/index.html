@@ -1,42 +1,326 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <title>Todo list app</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
-</head>
-
-<body>
-    <section class="content">
-        <div class="container">
-            <h1 class="content__title">Сайты NATIVEROLL.TV улучшили мобильное видео</h1>
-            <h2 class="content__subtitle">
-          Технологическая платформа по размещению видеорекламы NATIVEROLL.TV
-          обновляет линейку форматов и открывает рекламодателям новые возможности
-          в рамках размещения мобильного видео
-        </h2>
-            <p class="content__text">
-                Новостной и медиаконтент опережает по популярности онлайн-видеосмотрение (согласно данным TNS).Таким образом, размещая outstream-видео через платформу NATIVEROLL.TV,рекламодатель имеет возможность построить <a href="" class="content__link">больший эффективный охват.</a>
-            </p>
-            <h4 class="content__video-dscr">Native roll / Square</h4>
-            <blockquote class="content__quote">
-                «В качестве стратегии на 2017 год мы выбрали mobile-видео, — говорит генеральный директор технологической платформы NATIVEROLL.TV Антон Бещеков. — Аудитория медиа медленно, но верно перетекает в мобильные устройства, это видно по нашей статистике. Если
-                говорить о выходных днях, то доля аудитории десктопа меньше по сравнению с долей аудитории mobile. Задача специалистов по маркетингу — следовать за аудиторией и выстраивать качественную коммуникацию в формате видео. Сегодня мы представляем
-                рынку наши новые технологические возможности для решения стратегических задач в рамках рекламной коммуникации. Качество и прозрачность при размещении видео — те ценности, на основе которых построен наш сервис. Мы рады, что все больше компаний
-                выбирают outstream как основной канал для размещения видеорекламы и уверены, что в этом году количество наших партнеров вырастет».
-            </blockquote>
-            <a href="https://adindex.ru/news/releases/2017/02/27/158231.phtml" class="content__link" target="_blank">https://adindex.ru/news/releases/2017/02/27/158231.phtml</a>
-
-            <div class="content__video">
-                <iframe width="853" height="480" src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allowfullscreen></iframe>
-            </div>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title> </title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/libs/lightslider-master/dist/css/lightslider.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top"><a class="header__logo" href="#"><img src="assets/img/logo.png" alt=""></a>
+          <ul class="header__nav nav">
+            <li class="nav__item"><a class="nav__link" href="">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href=""> Menu</a></li>
+            <li class="nav__item"><a class="nav__link" href=""> About Us</a></li>
+            <li class="nav__item"><a class="nav__link" href=""> Shop</a></li>
+            <li class="nav__item"><a class="nav__link" href=""> Contact</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="header__slider slider">
+        <div class="slider__content">
+          <div class="slider__slide active" id="slide1"><img class="slider__image" src="assets/img/header_slide.jpg" alt="">
+            <div class="slider__txt">
+              <h1 class="slider__head"><span class="slider__span">Kafeinate</span> Coffee</h1>
+              <p class="slider__text">Lorem ipsum dolor sit amet, consectetu sit ametea adipiscing elit. Suspendisse vitae massa velit, euase </p><br>
+              <laoreet>massa. Lorem ipsum.</laoreet>
+              <button class="lider__btn">Order Now</button>
+            </div>
+          </div>
+          <div class="slider__slide active" id="slide2"><img class="slider__image" src="assets/img/header_slide.jpg" alt="">
+            <div class="slider__txt">
+              <h1 class="slider__head"><span class="slider__span">Kafeinate</span> Coffee</h1>
+              <p class="slider__text">Lorem ipsum dolor sit amet, consectetu sit ametea adipiscing elit. Suspendisse vitae massa velit, euase laoreet massa. Lorem ipsum.</p>
+              <button class="lider__btn">Order Now</button>
+            </div>
+          </div>
+          <div class="slider__slide active" id="slide3"><img class="slider__image" src="assets/img/header_slide.jpg" alt="">
+            <div class="slider__txt">
+              <h1 class="slider__head"><span class="slider__span">Kafeinate</span> Coffee</h1>
+              <p class="slider__text">Lorem ipsum dolor sit amet, consectetu sit ametea adipiscing elit. Suspendisse vitae massa velit, euase laoreet massa. Lorem ipsum.</p>
+              <button class="lider__btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="slider__controlls controlls">
+          <ul class="controlls__list">
+            <li class="controlls__item"><a class="controlls__link active" href="#slide1"> </a></li>
+            <li class="controlls__item"><a class="controlls__link active" href="#slide1"></a></li>
+            <li class="controlls__item"><a class="controlls__link active" href="#slide1"></a></li>
+            <li class="controlls__item"><a class="controlls__link active" href="#slide1"> </a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="services">
+      <div class="container">
+        <h2 class="services__head"><span class="services__txt">OUR</span>  SERVICES</h2>
+        <p class="services__dscr">Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Nulla semper arcu. Nam molestie sem eu quam fermentum a tempus nisi aliquet.</p>
+        <div class="services__content">
+              <div class="services__block"><img class="services__img" src="assets/img/services_one.png" alt="">
+                <h3 class="services__name">Coffee</h3>
+                <p class="services__dscr">Lorem ipsum doconsectetur adipiscing. Suspensse doco.</p>
+              </div>
+              <div class="services__block"><img class="services__img" src="assets/img/services_two.png" alt="">
+                <h3 class="services__name">Drinks</h3>
+                <p class="services__dscr">Lorem ipsum doconsectetur adipiscing. Suspensse doco.</p>
+              </div>
+              <div class="services__block"><img class="services__img" src="assets/img/services_three.png" alt="">
+                <h3 class="services__name">Breakfast</h3>
+                <p class="services__dscr">Lorem ipsum doconsectetur adipiscing. Suspensse doco.</p>
+              </div>
+        </div>
+      </div>
     </section>
-</body>
-
+    <section class="menu">
+      <div class="container">
+        <div class="menu__left sect">
+          <h2 class="menu__head">Menu</h2>
+          <div class="menu__wrapper">
+            <nav class="menu__nav">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link active" href="#tab1">Coffee Beans</a></li>
+                <li class="menu__item"><a class="menu__link" href="#tab2">Drinks</a></li>
+                <li class="menu__item"><a class="menu__link" href="#tab3">Breakfast</a></li>
+              </ul>
+            </nav>
+            <div class="menu__wrap">
+              <div class="menu__content">
+                <div class="wrap active" id="tab1">
+                  <div class="menu__tab food">
+                    <div class="food__content">
+                      <div class="food__item">
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                      <div class="food__item"> 
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__tab food">
+                    <div class="food__content">
+                      <div class="food__item">
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                      <div class="food__item"> 
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__tab food">
+                    <div class="food__content">
+                      <div class="food__item">
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                      <div class="food__item"> 
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__content">
+                <div class="wrap" id="tab2">
+                  <div class="menu__tab food">
+                    <div class="food__content">
+                      <div class="food__item">
+                        <div class="food__head food__inner"><span class="food__h">1/ ВРРРРВА</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                      <div class="food__item"> 
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__tab food">
+                    <div class="food__content">
+                      <div class="food__item">
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                      <div class="food__item"> 
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__tab food">
+                    <div class="food__content">
+                      <div class="food__item">
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                      <div class="food__item"> 
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  					</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__content">
+                <div class="wrap" id="tab3">
+                  <div class="menu__tab food">
+                    <div class="food__content">
+                      <div class="food__item">
+                        <div class="food__head food__inner"><span class="food__h">1/АПАПАПАП</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                      <div class="food__item"> 
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__tab food">
+                    <div class="food__content">
+                      <div class="food__item">
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                      <div class="food__item"> 
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="menu__tab food">
+                    <div class="food__content">
+                      <div class="food__item">
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  </span></div>
+                      </div>
+                      <div class="food__item"> 
+                        <div class="food__head food__inner"><span class="food__h">1/ Cappuchino</span><span class="food__text">$5.5</span></div>
+                        <div class="food__dscr food__inner"><span class="food__text">Lorem ipsum Culpa in aute minim irure pariaturaa</span><span class="food__text">60  					</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="special">
+      <div class="container">
+        <h2 class="special__head">Our <span class="special__txt">special things</span></h2>
+        <p class="special__dscr">Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Nulla semper arcu.Nam molestie sem eu quam fermentum a tempus nisi aliquet.</p>
+            <div class="special__row">
+              <div class="special__block left"><img class="special__img" src="assets/img/special_one.jpg" alt=""></div>
+              <div class="special__block right">
+                <h3 class="special__name">Good coffee beans</h3>
+                <p class="special__dscr">Lorem ipsum dolor sit amet, consec ac adipiscing elit. Suspendisse massa velit, eu laoreet massa. Sed ibero. Aenean sodales dictum augufaucibus nisi sollicitudin eu. Nula se Nam molestie sem eu		</p>
+              </div>
+            </div>
+            <div class="special__row">
+              <div class="special__block left"><img class="special__img" src="assets/img/special_two.jpg" alt=""></div>
+              <div class="special__block right">
+                <h3 class="special__name">Good coffee beans</h3>
+                <p class="special__dscr">Lorem ipsum dolor sit amet, consec ac adipiscing elit. Suspendisse massa velit, eu laoreet massa. Sed ibero. Aenean sodales dictum augufaucibus nisi sollicitudin eu. Nula se Nam molestie sem eu		</p>
+              </div>
+            </div>
+            <div class="special__row">
+              <div class="special__block left"><img class="special__img" src="assets/img/special_three.jpg" alt=""></div>
+              <div class="special__block right">
+                <h3 class="special__name">Good ingridients</h3>
+                <p class="special__dscr">Lorem ipsum dolor sit amet, consec ac adipiscing elit. Suspendisse massa velit, eu laoreet massa. Sed ibero. Aenean sodales dictum augufaucibus nisi sollicitudin eu. Nula se Nam molestie sem eu		</p>
+              </div>
+            </div>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="container">
+        <h2 class="offer__head">ARABICA <span class="offer__txt">COFFEE BEANS</span></h2>
+        <p class="offer__dscr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumen asperiores, saepe alias dignissimos consectetur ea cum sint tenetur neque cupiditate beatae optio eos. Assumen asperiores, saepe alias dignissimos.</p>
+        <button class="offer__btn">Know more</button>
+      </div>
+    </section>
+    <section class="favorites">
+      <div class="container">
+        <h2 class="favorites__head">Our <span class="favorites__txt">favorite products</span></h2>
+        <div class="favorites__controlls">
+          <button class="favorites__btn favorites__filter" data-filter="beans">Coffee beans</button>
+          <button class="favorites__btn favorites__filter" data-filter="breakfast">Breakfast</button>
+          <button class="favorites__btn favorites__filter" data-filter="drinks">Coffee &amp; Drinks</button>
+          <button class="favorites__btn favorites__filter" data-filter="package">Coffee package</button>
+        </div>
+        <div class="favorites__products">
+          <div class="favorites__row">
+                <div class="favorites__block" data-filter="{fil}">
+                  <div class="favorites__image"><img class="favorites__img" src="assets/img/favorite_one.jpg" alt=""></div>
+                  <div class="favorites__text"><span class="favorites__title">Machiato Coffee</span><span class="favorites__price">$5</span>
+                    <div class="favorites__btns">
+                      <button class="favorites__cart">Add to cart</button>
+                      <button class="favorites__order">Order</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="favorites__block" data-filter="{fil}">
+                  <div class="favorites__image"><img class="favorites__img" src="assets/img/favorite_two.jpg" alt=""></div>
+                  <div class="favorites__text"><span class="favorites__title">Machiato Coffee</span><span class="favorites__price">$2</span>
+                    <div class="favorites__btns">
+                      <button class="favorites__cart">Add to cart</button>
+                      <button class="favorites__order">Order</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="favorites__block" data-filter="{fil}">
+                  <div class="favorites__image"><img class="favorites__img" src="assets/img/favorite_three.jpg" alt=""></div>
+                  <div class="favorites__text"><span class="favorites__title">Machiato Coffee</span><span class="favorites__price">$3</span>
+                    <div class="favorites__btns">
+                      <button class="favorites__cart">Add to cart</button>
+                      <button class="favorites__order">Order</button>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="favorites__row">
+                <div class="favorites__block" data-filter="{fil}">
+                  <div class="favorites__image"><img class="favorites__img" src="assets/img/favorite_four.jpg" alt=""></div>
+                  <div class="favorites__text"><span class="favorites__title">Machiato Coffee</span><span class="favorites__price">$5</span>
+                    <div class="favorites__btns">
+                      <button class="favorites__cart">Add to cart</button>
+                      <button class="favorites__order">Order</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="favorites__block" data-filter="{fil}">
+                  <div class="favorites__image"><img class="favorites__img" src="assets/img/favorite_five.jpg" alt=""></div>
+                  <div class="favorites__text"><span class="favorites__title">Machiato Coffee</span><span class="favorites__price">$2</span>
+                    <div class="favorites__btns">
+                      <button class="favorites__cart">Add to cart</button>
+                      <button class="favorites__order">Order</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="favorites__block" data-filter="{fil}">
+                  <div class="favorites__image"><img class="favorites__img" src="assets/img/favorite_six.jpg" alt=""></div>
+                  <div class="favorites__text"><span class="favorites__title">Machiato Coffee</span><span class="favorites__price">$3</span>
+                    <div class="favorites__btns">
+                      <button class="favorites__cart">Add to cart</button>
+                      <button class="favorites__order">Order</button>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/libs/lightslider-master/dist/js/lightslider.min.js"></script>
+    <script src="assets/js/functions.js"></script>
+  </body>
 </html>
