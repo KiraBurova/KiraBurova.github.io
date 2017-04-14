@@ -1,20 +1,22 @@
+html {
+  font-size: 16px;
+}
 body {
     letter-spacing: 0;
     font-weight: 400;
     font-style: normal;
+    color: rgba(0, 0, 0, .8);
+    font-size: 1.125rem;
+    line-height: 1.4;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: rgba(0, 0, 0, .8);
-    font-size: 18px;
-    line-height: 1.4;
 }
 
 .container {
-    width: 80%;
-    max-width: 740px;
+    max-width: 46.25rem;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 2.5rem;
 }
 
 .content {
@@ -28,7 +30,7 @@ body {
     color: rgba(0, 0, 0, .8);
     font-weight: 700;
     font-style: normal;
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-left: -2.5px;
     line-height: 1.04;
     letter-spacing: -.028em;
@@ -40,7 +42,7 @@ body {
     color: rgba(0, 0, 0, .44);
     font-weight: 400;
     font-style: normal;
-    font-size: 27px;
+    font-size: 1.688rem;
     margin-left: -1.69px;
     line-height: 1.22;
     letter-spacing: -.022em;
@@ -51,7 +53,7 @@ body {
     font-family: 'Source Serif Pro', Georgia, Cambria, "Times New Roman", Times, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 21px;
+    font-size: 1.313rem;
     line-height: 1.58;
     letter-spacing: -.003em
 }
@@ -61,7 +63,7 @@ body {
     font-family: 'Source Sans Pro', "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-left: -1.5px;
     line-height: 1.22;
     letter-spacing: -.018em
@@ -72,13 +74,13 @@ body {
     font-family: 'Source Serif Pro', Georgia, Cambria, "Times New Roman", Times, serif;
     font-weight: 400;
     font-style: italic;
-    font-size: 21px;
+    font-size: 1.313rem;
     line-height: 1.58;
     letter-spacing: -.003em;
-    border-left: 3px solid rgba(0, 0, 0, .8);
-    padding-left: 20px;
+    border-left: 0.188em solid rgba(0, 0, 0, .8);
+    padding-left: 1.250em;
     margin-left: -23px;
-    padding-bottom: 2px
+    padding-bottom: 0.125em;
 }
 
 .content__link {
@@ -115,35 +117,45 @@ body {
     height: 100%;
 }
 
+.conent__image {
+  width: 100%;
+  height: 100%;
+}
+
+
 @media (max-width: 767px) {
+    .container {
+      padding: 1.250em;
+    }
     .content__title {
-        font-size: 32px;
+        font-size: 2rem;
         margin: 25px 0 0 -2px;
         line-height: 1.04;
         letter-spacing: -.028em;
     }
     .content__subtitle {
-        font-size: 23px;
-        margin: 5px 0 0 -1.44px;
+        font-size: 1.438rem;
+        margin: 5px 0 22px -1.44px;
         line-height: 1.22;
         letter-spacing: -.022em
     }
     .content__text {
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 1.58;
         letter-spacing: -.004em;
         margin-top: 0;
     }
     .content__quote {
-        padding-left: 17px;
+    font-size: 1.125rem;
+        padding-left: 1.063em;
         margin: 30 px 0 0 -20px;
-        font-size: 18px;
         line-height: 1.58;
         letter-spacing: -.004em
     }
     .content__link {
-        font-size: 18px;
+        font-size: 1.125rem;
         background-size: 2px 1px;
         background-position: 0 1.03em;
     }
 }
+
