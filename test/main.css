@@ -1,0 +1,161 @@
+html {
+  font-size: 16px;
+}
+body {
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, .8);
+    font-size: 1.125rem;
+    line-height: 1.4;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 46.25rem;
+    margin: 0 auto;
+    padding: 0 2.5rem;
+}
+
+.content {
+    word-break: break-word;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.content__title {
+    font-family: 'Source Sans Pro', "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    color: rgba(0, 0, 0, .8);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-left: -2.5px;
+    line-height: 1.04;
+    letter-spacing: -.028em;
+}
+
+.content__subtitle {
+    margin: 5px 0 22px 0;
+    font-family: 'Source Sans Pro', "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    color: rgba(0, 0, 0, .44);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.688rem;
+    margin-left: -1.69px;
+    line-height: 1.22;
+    letter-spacing: -.022em;
+}
+
+.content__text, .content__link {
+    margin-top: 29px;
+    font-family: 'Source Serif Pro', Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.313rem;
+    line-height: 1.58;
+    letter-spacing: -.003em
+}
+
+.content__video-dscr {
+    margin-top: 30px;
+    font-family: 'Source Sans Pro', "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-left: -1.5px;
+    line-height: 1.22;
+    letter-spacing: -.018em
+}
+
+.content__quote {
+    margin-top: 38px;
+    font-family: 'Source Serif Pro', Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.313rem;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    border-left: 0.188em solid rgba(0, 0, 0, .8);
+    padding-left: 1.250em;
+    margin-left: -23px;
+    padding-bottom: 0.125em;
+}
+
+.content__link {
+    color: inherit;
+    text-decoration: none;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .6) 50%, rgba(0, 0, 0, 0) 50%);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .6) 50%, rgba(0, 0, 0, 0) 50%);
+    background-repeat: repeat-x;
+    background-size: 2px .1em;
+    background-position: 0 1.07em;
+}
+
+.content__link:hover, .content__link:active {
+    outline: none
+}
+
+.content__video {
+    margin: 44px 0;
+    text-align: center;
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.content__video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.conent__image {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+      padding: 1.250em;
+    }
+    .content__title {
+        font-size: 2rem;
+        margin: 25px 0 0 -2px;
+        line-height: 1.04;
+        letter-spacing: -.028em;
+    }
+    .content__subtitle {
+        font-size: 1.438rem;
+        margin: 5px 0 22px -1.44px;
+        line-height: 1.22;
+        letter-spacing: -.022em
+    }
+    .content__text {
+        font-size: 1.125rem;
+        line-height: 1.58;
+        letter-spacing: -.004em;
+        margin-top: 0;
+    }
+    .content__quote {
+    font-size: 1.125rem;
+        padding-left: 1.063em;
+        margin: 30 px 0 0 -20px;
+        line-height: 1.58;
+        letter-spacing: -.004em
+    }
+    .content__link {
+        font-size: 1.125rem;
+        background-size: 2px 1px;
+        background-position: 0 1.03em;
+    }
+}
+
