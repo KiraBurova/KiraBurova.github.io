@@ -1,0 +1,27 @@
+.services
+	margin: 100px 0
+	text-align: center
+
+	&__content
+		display: flex
+		margin-top: 55px
+
+	&__head
+		color: $golden-grass
+
+	&__img
+		border: 7px solid #e2e2e2
+		border-radius: 50%
+		box-shadow: 0 0 2px 8px rgba(226,226,226, 0.5) 
+
+
+@media (max-width: 910px)
+	.services__content
+		flex-wrap: wrap
+	.services__block
+		flex: 1
+		margin-bottom: 20px
+		margin-right: 10px	
+@media (max-width: 555px)
+	.services__block
+		margin-right: 0		

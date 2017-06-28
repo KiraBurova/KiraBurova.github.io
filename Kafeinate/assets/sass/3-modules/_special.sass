@@ -1,0 +1,40 @@
+.special
+	text-align: center
+	padding: 100px 0
+	background: $wild-sand
+
+	&__txt
+		color: $golden-grass
+
+	&__dscr
+		padding-bottom: 25px
+
+	&__row
+		display: flex
+		&:nth-child(2n)
+			display: flex
+			flex-direction: row-reverse
+	&__block
+		background: $white
+		text-align: left
+
+		&.right
+			padding: 55px 100px
+	
+	&__name
+		color: $equator
+
+@media (max-width: 1057px)	
+	.special
+		&__row
+			flex-direction: column
+			&:nth-child(2n)
+				flex-direction: column
+		&__block
+			margin: 0 auto
+
+@media (max-width: 360px)	
+	.special
+		&__block
+			&.right
+				padding: 25px

@@ -1,0 +1,376 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width")
+    title 
+    link(rel="stylesheet", href="assets/css/main.css")
+    link(rel='stylesheet', href='assets/libs/lightslider-master/dist/css/lightslider.min.css') 
+  body
+    header.header
+      .container
+        .header__top
+          a(href="#").header__logo
+            img(src="assets/img/logo.png", alt="")
+          ul.header__nav.nav
+            li.nav__item
+              a(href="").nav__link Home
+            li.nav__item
+              a(href="").nav__link  Menu
+            li.nav__item
+              a(href="").nav__link  About Us
+            li.nav__item
+              a(href="").nav__link  Shop
+            li.nav__item
+              a(href="").nav__link  Contact
+
+      .header__slider.slider
+        .slider__content
+          .slider__slide.active#slide1
+            img(src='assets/img/main_slide.jpg' alt='').slider__image
+            .slider__txt
+              h1.slider__head #[span.slider__span Kafeinate] Coffee
+              p.slider__text Lorem ipsum dolor sit amet, consectetu sit ametea adipiscing elit. Suspendisse vitae massa velit, euase
+              button.slider__btn Order Now
+          .slider__slide#slide2
+            img(src='assets/img/main_slide.jpg' alt='').slider__image
+            .slider__txt
+              h1.slider__head #[span.slider__span Kafeinate] sdhfsdfj
+              p.slider__text Lorem ipsum dolor sit amet, consectetu sit ametea adipiscing elit. Suspendisse vitae massa velit, euase laoreet massa. Lorem ipsum.
+              button.slider__btn Order Now
+          .slider__slide#slide3
+            img(src='assets/img/main_slide.jpg' alt='').slider__image
+            .slider__txt
+              h1.slider__head #[span.slider__span Kafeinate] Coffee
+              p.slider__text Lorem ipsum dolor sit amet, consectetu sit ametea adipiscing elit. Suspendisse vitae massa velit, euase laoreet massa. Lorem ipsum.
+              button.slider__btn Order Now
+        .slider__controlls.controlls
+          ul.controlls__list
+            li.controlls__item
+              a(href='#slide1').controlls__link.active 
+            li.controlls__item
+              a(href='#slide2').controlls__link
+            li.controlls__item
+              a(href='#slide3').controlls__link
+
+    mixin services(src, name)
+      .services__block
+        img(src=src, alt="").services__img
+        h3.services__name #{name}
+        p.services__dscr Lorem ipsum doconsectetur adipiscing. Suspensse doco.
+
+    section.services
+      .container
+        h2.services__head #[span.services__txt OUR]  SERVICES
+        p.services__dscr Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Nulla semper arcu. Nam molestie sem eu quam fermentum a tempus nisi aliquet.
+        .services__content
+          +services("assets/img/services_one.png", 'Coffee')
+          +services("assets/img/services_two.png", 'Drinks')
+          +services("assets/img/services_three.png", 'Breakfast')
+    section.menu
+      .container
+        .menu__left.sect
+          h2.menu__head Menu
+          .menu__wrapper
+            nav.menu__nav
+              ul.menu__list
+                li.menu__item
+                  a.menu__link(href="#tab1").active Coffee Beans
+                li.menu__item
+                  a.menu__link(href="#tab2") Drinks
+                li.menu__item
+                  a.menu__link(href="#tab3") Breakfast
+            .menu__wrap
+              .menu__content
+                .wrap#tab1.active
+                  .menu__tab.food
+                    .food__content
+                      .food__item
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                      .food__item 
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                  .menu__tab.food
+                    .food__content
+                      .food__item
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                      .food__item 
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                  .menu__tab.food
+                    .food__content
+                      .food__item
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                      .food__item 
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+              .menu__content
+                .wrap#tab2
+                  .menu__tab.food
+                    .food__content
+                      .food__item
+                        .food__head.food__inner
+                          span.food__h 1/ ВРРРРВА
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                      .food__item 
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                  .menu__tab.food
+                    .food__content
+                      .food__item
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                      .food__item 
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                  .menu__tab.food
+                    .food__content
+                      .food__item
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                      .food__item 
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  					
+              .menu__content
+                .wrap#tab3
+                  .menu__tab.food
+                    .food__content
+                      .food__item
+                        .food__head.food__inner
+                          span.food__h 1/АПАПАПАП
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                      .food__item 
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                  .menu__tab.food
+                    .food__content
+                      .food__item
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                      .food__item 
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__innerlikes
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                  .menu__tab.food
+                    .food__content
+                      .food__item
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  
+                      .food__item 
+                        .food__head.food__inner
+                          span.food__h 1/ Cappuchino
+                          span.food__text.food__price $5.5
+                        .food__dscr.food__inner
+                          span.food__text Lorem ipsum Culpa in aute minim irure pariaturaa
+                          span.food__text.food__likes 60  					
+
+    mixin special(src, name)
+      .special__row
+        .special__block.left
+          img(src=src, alt="").special__img
+        .special__block.right
+          h3.special__name #{name}
+          p.special__dscr Lorem ipsum dolor sit amet, consec ac adipiscing elit. Suspendisse massa velit, eu laoreet massa. Sed ibero. Aenean sodales dictum augufaucibus nisi sollicitudin eu. Nula se Nam molestie sem eu		
+    section.special
+      .container
+        h2.special__head Our #[span.special__txt special things]
+        p.special__dscr Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Nulla semper arcu.Nam molestie sem eu quam fermentum a tempus nisi aliquet.
+
+
+        +special("assets/img/special_one.jpg", 'Good coffee beans')
+        +special("assets/img/special_two.jpg", 'Good coffee beans')
+        +special("assets/img/special_three.jpg", 'Good ingridients')
+    section.offer
+      .container
+        h2.offer__head ARABICA #[span.offer__txt COFFEE BEANS]
+        p.offer__dscr Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumen asperiores, saepe alias dignissimos consectetur ea cum sint tenetur neque cupiditate beatae optio eos. Assumen asperiores, saepe alias dignissimos.
+        button.offer__btn Know more
+    mixin products(src, head, price, fil)
+      .favorites__block(data-filter='{fil}')
+        .favorites__image
+          img(src=src, alt="").favorites__img
+        .favorites__text
+          span.favorites__title #{head}
+          span.favorites__price $#{price}
+          .favorites__btns
+            button.favorites__cart Add to cart
+            button.favorites__order Order
+    section.favorites
+      .container
+        h2.favorites__head Our #[span.favorites__txt favorite products]
+        .favorites__controlls
+          button.favorites__btn.favorites__filter(data-filter='beans') Coffee beans
+          button.favorites__btn.favorites__filter(data-filter='breakfast') Breakfast
+          button.favorites__btn.favorites__filter(data-filter='drinks') Coffee &amp; Drinks
+          button.favorites__btn.favorites__filter(data-filter='package') Coffee package
+        .favorites__products
+          .favorites__row
+            +products('assets/img/favorite_one.jpg', 'Machiato Coffee', '5', 'breakfast')
+            +products('assets/img/favorite_two.jpg', 'Machiato Coffee', '2')
+            +products('assets/img/favorite_three.jpg', 'Machiato Coffee', '3')
+          .favorites__row
+            +products('assets/img/favorite_four.jpg', 'Machiato Coffee', '5')
+            +products('assets/img/favorite_five.jpg', 'Machiato Coffee', '2')
+            +products('assets/img/favorite_six.jpg', 'Machiato Coffee', '3')
+
+    section.feedback
+      .feedback__content
+        .feedback__slide.active#slidefeed1
+          .feedback__txt
+            h1.feedback__head #[span.feedback__span Our] happy visitor
+            p.feedback__text 
+              q
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                br
+                | Assumen asperiores, saepe alias dignissimos consectetur ea cum sint tenetur neque cupiditate beatae optio eos. 
+                br
+                | Assumen asperiores, saepe alias dignissimos.
+            img(src='assets/img/visitor.png').feedback__pic
+            span.feedback__info Jane Miller 
+              br
+              | Student, New York, 22
+        .feedback__slide#slidefeed2
+          .feedback__txt
+            h1.feedback__head #[span.feedback__span Our] happy visitor
+            p.feedback__text 
+              q.
+                Lorem ipsum dolor sit amet, consectetu sit ametea adipiscing elit. Suspendisse vitae massa velit, euase
+            img(src='assets/img/visitor.png').feedback__pic
+            span.feedback__info Bill Swan 
+              br
+              | Student, New York, 22
+        .feedback__slide#slidefeed3
+          .feedback__txt
+            h1.feedback__head #[span.feedback__span Our] happy visitor
+            p.feedback__text 
+              q.
+                Lorem ipsum dolor sit amet, consectetu sit ametea adipiscing elit. Suspendisse vitae massa velit, euase
+            img(src='assets/img/visitor.png').feedback__pic
+            span.feedback__info Connor Wesley 
+              br
+              | Student, New York, 22
+      .feedback__controlls.contr
+        ul.contr__list
+          li.contr__item
+            a(href='#slidefeed1').contr__link.active 
+          li.contr__item
+            a(href='#slidefeed2').contr__link
+          li.contr__item
+            a(href='#slidefeed3').contr__link
+    section.contact
+      h2.contact__title Contact Us
+      .container
+        .contact__inner
+          .contact__info
+            span.contact__address 198 West 21th Srtreet, Suite 721 New York
+            span.contact__phone +(84)123456789
+            span.contact__email cafeinate@cofeee.org
+          .contact__form
+            form.form
+              .form__inputs
+                input.form__name(type="text" placeholder='Name *' required)
+                input.form__email(type="text" placeholder='Email *' required)
+              select.form__cooperation(name="" placeholder='Coopercation')
+                option.form__option One
+                option.form__option Two
+                option.form__option Three
+              textarea.form__message(name="", cols="30", rows="10")
+              button.form__send Send
+    section.subscribe
+      .container
+        .subscribe__inner
+          a(href='#')
+            img.subscribe__logo.logo(src="assets/img/logo.png", alt="")
+          p.subscribe__descr Maecenas vitae venenatis lorem. Pellentesque et lacinia eros, condimentum hendreritnisl In iaculis a nunc a euismod. Phasellus aliquam sagittis congue.
+          form.subscribe__form
+            button.subscribe__btn Subscribe   
+            input(type='text' placeholder='Your email' required).subscribe__input
+          div.subscribe__up
+    footer.footer
+      .container
+        .footer__inner
+          span.footer__design-by Designed by Ann Le 2016
+          .social
+            a(href='https://twitter.com' target='_blank')
+              i.social__twitter
+            a(href='https://facebook.com' target='_blank')
+              i.social__face
+            a(href='https://pinterest.com' target='_blank')
+              i.social__pin
+            a(href='https://tumblr.com' target='_blank') 
+              i.social__tumblr            
+
+
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="assets/libs/lightslider-master/dist/js/lightslider.min.js")
+    script(src="assets/js/functions.js")

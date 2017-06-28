@@ -1,0 +1,102 @@
+.menu
+  background: $black url('../img/menu.jpg') no-repeat
+  background-position: 100% 50%
+  background-size: contain
+
+  .sect
+    display: inline-block
+    width: 48%
+    padding-top: 100px
+
+  &__head
+    color: $sunglow
+    text-align: center
+
+  &__list
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0
+    color: $sunglow
+
+  &__link
+    display: block
+    text-decoration: none
+    font-size: 1.2em
+    padding: 0.7em 3em
+
+    &:hover, &.active
+      color: $rangoon-green
+      background: $sunglow
+
+  &__item
+    list-style-type: none
+    cursor: pointer
+    color: $sunglow
+    background: transparent
+    border: 2px solid $sunglow
+    border-radius: 5px
+
+    &:last-child
+      margin-right: 0
+
+    &:hover
+      background: $sunglow
+
+      > .menu__link
+        color: $rangoon-green
+
+  &__content
+    padding-top: 25px
+
+  &__img
+    width: 100%
+    height: auto
+.menu__tab
+.food
+  &__content
+    display: flex
+    color: white
+
+  &__item
+    width: 50%
+    margin-right: 3em
+    border-top: 1px solid $dorado
+    //border-bottom: 1px solid $dorado
+    padding: 25px 0
+
+    &:nth-child(2n)
+      margin-right: 0
+
+  &__head,
+  &__dscr
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+  &__h,
+  &__text,
+  &__price
+    color: $buttermilk
+    font-family: 'Economica', sans-serif
+    font-weight: 400
+    font-size: 2.4rem
+
+  &__text
+    color: $vanilla
+    font-size: 1.2rem
+
+  &__likes
+    display: flex
+    background-image: url('../img/sprite.png')
+    background-repeat: no-repeat
+    background-position: -31px -82px
+    font-size: 1.1rem
+    padding-left: 1.929rem
+
+.wrap
+  display: none
+
+.wrap.active
+  display: block

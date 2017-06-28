@@ -1,0 +1,53 @@
+.slider
+  margin-top: -65px
+  color: $white
+
+  &__slide
+    display: none
+
+  &__slide.active
+    display: block
+
+  &__image
+    width: 100%
+    position: relative
+
+  &__txt
+    position: absolute
+    width: 50%
+    top: 190px
+    right: 60px
+
+  &__span
+    color: $sunglow
+
+  &__text
+    color: $white
+    line-height: 1.5
+    margin-bottom: 20px
+
+  .controlls
+
+    &__list
+      display: flex
+      justify-content: center
+
+    &__item
+      list-style: none
+
+    &__link
+      display: block
+      height: 12px
+      width: 12px
+      border-radius: 50%
+      background: $white
+      cursor: pointer
+      margin-right: 10px
+
+      &:hover,
+      &:focus,
+      &:active
+        background: $sunglow
+
+    &__link.active
+      background: $sunglow

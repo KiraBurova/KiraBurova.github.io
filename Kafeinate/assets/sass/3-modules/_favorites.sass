@@ -1,0 +1,75 @@
+.favorites
+  text-align: center
+  margin-top: 100px
+
+  &__txt
+    color: $golden-grass
+
+  &__controlls
+    display: flex
+    justify-content: space-around
+    margin: 30px 0 50px 0
+
+  &__btn
+    color: $cape-cod
+    border: 1px solid $cape-cod
+    &:hover,
+    &:focus,
+    &:active
+      color: $white
+      border: 1px solid $sunglow
+
+  &__row
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-bottom: 50px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__img
+    width: 100%
+    height: 400px
+
+  &__text
+    display: flex
+    flex-direction: column
+
+  &__title
+    display: block
+    position: relative
+    font-size: 2.125rem
+    color: $silver
+    background: $black
+    font-family: 'Economica', sans-serif
+    font-weight: 400
+    font-size: 2.125rem
+
+  &__price
+    position: absolute
+    line-height: 1
+    padding: .5em
+    margin: -35px 0 0 5px
+    background: $sunglow
+    color: $gondola
+    border-radius: 50%
+    font-size: 2rem
+    z-index: 2
+
+  &__btns
+    display: flex
+    justify-content: center
+
+  &__cart
+    background: $black
+    color: $rose-white
+    border: none
+
+  &__order
+    background: $sunglow
+    color: $gondola
+
+  &__cart, &__order
+    border-radius: 0
+    flex: 1

@@ -1,0 +1,76 @@
+.contact
+  &__title
+    text-align: center
+
+  &__inner
+    display: flex
+    justify-content: space-around
+
+  &__info
+    font-size: 1.429rem
+    font-family: 'Quicksand'
+
+    span
+      display: block
+      margin-bottom: 0.857em
+
+      &:last-child
+        margin-bottom: 0
+
+  &__address
+    &:before
+      content: ''
+      display: inline-block
+      background: url('../img/sprite.png')
+      background-repeat: no-repeat
+      width: 46px
+      height: 46px
+      vertical-align: middle
+      margin-right: 8px
+
+  &__phone
+    &:before
+      content: ''
+      display: inline-block
+      background: url('../img/sprite.png')
+      background-repeat: no-repeat
+      background-position: -46px 0px
+      width: 46px
+      height: 46px
+      vertical-align: middle
+      margin-right: 8px
+
+  &__email
+    &:before
+      content: ''
+      display: inline-block
+      background: url('../img/sprite.png')
+      background-repeat: no-repeat
+      background-position: -92px 0
+      width: 46px
+      height: 46px
+      vertical-align: middle
+      margin-right: 8px
+
+  .form
+    display: flex
+    flex-direction: column
+
+
+    &__send
+      background: $sunglow
+      color: $black
+      padding: 0
+
+    &__name,
+    &__email,
+    &__cooperation,
+    &__message
+      margin-bottom: 1.429em
+      padding: 0.714em
+      border: none
+      background: $mercury
+      color: $silver
+
+    &__message
+      resize: none
