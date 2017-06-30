@@ -90,7 +90,25 @@ function scrollToTop() {
   else clearTimeout(timeOut);
 }
 
-//Слайдер
+
+var blocksArr = [].slice.call(document.querySelectorAll(".favorites__block"));
+var btns = [].slice.call(document.querySelectorAll(".favorites__btn"));
+function filterByData() {
+  for(var i = 0; i < blocksArr.length; i++) {
+  if(blocksArr[i].dataset.filter === this.dataset.filter) {
+    blocksArr[i].classList.add('active')
+  } else {
+    blocksArr[i].classList.remove('active');
+  }
+}
+}
+
+document.addEventListener('DOMContentLoaded' , function() {
+    btns[0].focus()
+})
 document.addEventListener('DOMContentLoaded', slideshowHeader);
 document.addEventListener('DOMContentLoaded', slideshow);
-upBtn.addEventListener('click', scrollToTop)
+upBtn.addEventListener('click', scrollToTop);
+btns.forEach(function (item) {
+        item.addEventListener('click', filterByData);
+    });

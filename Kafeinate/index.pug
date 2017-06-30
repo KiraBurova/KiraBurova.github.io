@@ -254,8 +254,8 @@ html(lang="en")
         h2.offer__head ARABICA #[span.offer__txt COFFEE BEANS]
         p.offer__dscr Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumen asperiores, saepe alias dignissimos consectetur ea cum sint tenetur neque cupiditate beatae optio eos. Assumen asperiores, saepe alias dignissimos.
         button.offer__btn Know more
-    mixin products(src, head, price, fil)
-      .favorites__block(data-filter='{fil}')
+    mixin products(src, head, price)
+      .favorites__block&attributes(attributes)= data-filter
         .favorites__image
           img(src=src, alt="").favorites__img
         .favorites__text
@@ -274,13 +274,13 @@ html(lang="en")
           button.favorites__btn.favorites__filter(data-filter='package') Coffee package
         .favorites__products
           .favorites__row
-            +products('assets/img/favorite_one.jpg', 'Machiato Coffee', '5', 'breakfast')
-            +products('assets/img/favorite_two.jpg', 'Machiato Coffee', '2')
-            +products('assets/img/favorite_three.jpg', 'Machiato Coffee', '3')
+            +products('assets/img/favorite_one.jpg', 'Machiato Coffee', '5').active(data-filter='package')
+            +products('assets/img/favorite_two.jpg', 'Machiato Coffee', '2')(data-filter='beans')
+            +products('assets/img/favorite_three.jpg', 'Machiato Coffee', '3')(data-filter='package')
           .favorites__row
-            +products('assets/img/favorite_four.jpg', 'Machiato Coffee', '5')
-            +products('assets/img/favorite_five.jpg', 'Machiato Coffee', '2')
-            +products('assets/img/favorite_six.jpg', 'Machiato Coffee', '3')
+            +products('assets/img/favorite_four.jpg', 'Machiato Coffee', '5')(data-filter='breakfast')
+            +products('assets/img/favorite_five.jpg', 'Machiato Coffee', '2')(data-filter='beans')
+            +products('assets/img/favorite_six.jpg', 'Machiato Coffee', '3')(data-filter='drinks')
 
     section.feedback
       .feedback__content

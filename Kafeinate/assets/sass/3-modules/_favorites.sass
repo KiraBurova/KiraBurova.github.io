@@ -2,12 +2,17 @@
   text-align: center
   margin-top: 100px
 
+  &__block
+    border: 1em solid transparent
+
+
   &__txt
     color: $golden-grass
 
   &__controlls
     display: flex
     justify-content: space-around
+    flex-wrap: wrap
     margin: 30px 0 50px 0
 
   &__btn
@@ -22,8 +27,10 @@
   &__row
     display: flex
     justify-content: space-around
+    flex-wrap: wrap
     align-items: center
     margin-bottom: 50px
+    box-sizing: border-box
 
     &:last-child
       margin-bottom: 0
@@ -73,3 +80,16 @@
   &__cart, &__order
     border-radius: 0
     flex: 1
+
+  .active
+    border: 1em solid $golden-grass
+
+@media(max-width: 962px)
+  .favorites__btn
+    padding: 0.7em
+    width: 400px
+    margin-bottom: .3em
+
+@media(max-width: 477px)
+  .favorites__controlls
+    justify-content: center

@@ -3,11 +3,6 @@
   background-position: 100% 50%
   background-size: contain
 
-  .sect
-    display: inline-block
-    width: 48%
-    padding-top: 100px
-
   &__head
     color: $sunglow
     text-align: center
@@ -52,6 +47,12 @@
   &__img
     width: 100%
     height: auto
+
+.sect
+  display: inline-block
+  width: 60%
+  padding-top: 100px
+
 .menu__tab
 .food
   &__content
@@ -100,3 +101,34 @@
 
 .wrap.active
   display: block
+
+@media (max-width: 1095px)
+  .menu
+    background: $black
+
+  .sect
+    width: 100%
+
+@media (max-width: 612px)
+
+  .food__content
+    flex-direction: column
+
+  .food__item
+    width: 100%
+
+@media (max-width: 600px)
+  .menu__link
+    padding: 0.7em 2em
+
+@media (max-width: 488px)
+  .menu__link
+    padding: 0.7em 1.5em
+
+@media (max-width: 433px)
+  .menu__link
+    padding: 0.7em 1em
+
+@media (max-width: 428px)
+  .menu__link
+    padding: 0.7em 0.5em
