@@ -391,7 +391,9 @@ span {
   .slider__txt {
     left: 0;
     top: 0;
-    padding: 0.6rem; } }
+    padding: 0.6rem; }
+  .slider__head {
+    font-size: 3em; } }
 @media (max-width: 515px) {
   .slider__controlls {
     margin-top: 20px; } }

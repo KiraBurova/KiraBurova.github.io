@@ -104,6 +104,21 @@ function filterByData() {
 }
 }
 
+//Убрать текст из Pug
+function removeText() {
+  var divs = document.querySelectorAll('.favorites__block');
+  divs = Array.prototype.slice.call(divs, 0);
+  divs.map(function(div){
+    if(div.childNodes.length) {
+      for(var i = 0; i<div.childNodes.length;i++) {
+        if(div.childNodes[i].nodeType === 3)
+        div.removeChild(div.childNodes[i]);
+      }
+    }
+  })
+}
+
+document.addEventListener('DOMContentLoaded', removeText);
 document.addEventListener('DOMContentLoaded' , function() {
     btns[0].focus()
 })
