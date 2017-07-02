@@ -81,8 +81,9 @@ function slideshow(e) {
   });
 }
 //Скролл к верху страницы
-var timeOut;
+
 function scrollToTop() {
+  var timeOut;
   if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
     window.scrollBy(0, -100);
     timeOut=setTimeout('scrollToTop()',10);
