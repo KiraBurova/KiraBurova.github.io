@@ -15,15 +15,15 @@ html(lang="en")
             img(src="assets/img/logo.png", alt="")
           ul.header__nav.nav
             li.nav__item
-              a(href="").nav__link Home
+              a(href="#").nav__link Home
             li.nav__item
-              a(href="").nav__link  Menu
+              a(href="#menu").nav__link  Menu
             li.nav__item
-              a(href="").nav__link  About Us
+              a(href="#aboutUs").nav__link  About Us
             li.nav__item
-              a(href="").nav__link  Shop
+              a(href="#shop").nav__link  Shop
             li.nav__item
-              a(href="").nav__link  Contact
+              a(href="#contact").nav__link  Contact
 
       .header__slider.slider
         .slider__content
@@ -60,7 +60,7 @@ html(lang="en")
         h3.services__name #{name}
         p.services__dscr Lorem ipsum doconsectetur adipiscing. Suspensse doco.
 
-    section.services
+    section.services#aboutUs
       .container
         h2.services__head #[span.services__txt OUR]  SERVICES
         p.services__dscr Aenean sodales dictum augue, in faucibus nisi sollicitudin eu. Nulla semper arcu. Nam molestie sem eu quam fermentum a tempus nisi aliquet.
@@ -68,7 +68,7 @@ html(lang="en")
           +services("assets/img/services_one.png", 'Coffee')
           +services("assets/img/services_two.png", 'Drinks')
           +services("assets/img/services_three.png", 'Breakfast')
-    section.menu
+    section.menu#menu
       .container
         .menu__left.sect
           h2.menu__head Menu
@@ -264,7 +264,7 @@ html(lang="en")
           .favorites__btns
             button.favorites__cart Add to cart
             button.favorites__order Order
-    section.favorites
+    section.favorites#shop
       .container
         h2.favorites__head Our #[span.favorites__txt favorite products]
         .favorites__controlls
@@ -326,7 +326,7 @@ html(lang="en")
             a(href='#slidefeed2').contr__link
           li.contr__item
             a(href='#slidefeed3').contr__link
-    section.contact
+    section.contact#contact
       h2.contact__title Contact Us
       .container
         .contact__inner
