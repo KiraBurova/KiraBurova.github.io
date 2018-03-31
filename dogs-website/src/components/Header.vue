@@ -1,0 +1,66 @@
+<template>
+  <header class="header">
+      <section class="header__top">
+          <a href="" class="header__logo">
+              Cozy House <br>
+              <span>Shelter for pets in Boston</span>
+          </a>
+          <nav class="header__menu menu">
+              <ul class="menu__inner">
+                  <li class="menu__item">About the shelter</li>
+                  <li class="menu__item">Our pets</li>
+                  <li class="menu__item">To help the shelter</li>
+                  <li class="menu__item">Contact</li>
+              </ul>
+          </nav>
+      </section>
+      <section class="header__main">
+          <div class="header__left">
+              <h1>Now only people <br> need a house </h1>
+          </div>
+          <div class="header__right"></div>
+      </section>
+  </header>
+</template>
+
+<script>
+
+export default {
+}
+</script>
+
+<style scoped>
+.header {
+    height: 930px;
+    background-image: url('../assets/header.png');
+    background-size: cover;
+    margin: 0 auto;
+}
+.header__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu__inner {
+    display: flex;
+}
+.menu__item {
+    list-style: none;
+    margin-right: 35px;
+    padding: 8px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+.menu__item:last-child {
+    margin-right: 0;
+}
+.menu__item:hover {
+    border-bottom: 2px solid var(--highlight);
+}
+.header__logo {
+    font-size: 32px;
+}
+.header__logo span {
+    font-size: 12px;
+}
+</style>
