@@ -1,5 +1,6 @@
 <template>
   <header class="header">
+    <div class="container">
       <section class="header__top">
           <a href="" class="header__logo">
               Cozy House <br>
@@ -20,6 +21,7 @@
           </div>
           <div class="header__right"></div>
       </section>
+    </div>
   </header>
 </template>
 
@@ -31,7 +33,9 @@ export default {
 
 <style scoped>
 .header {
-    height: 930px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    height: 100vh;
     background-image: url('../assets/header.png');
     background-size: cover;
     margin: 0 auto;
@@ -40,6 +44,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 25px 0;
 }
 .menu__inner {
     display: flex;
@@ -62,5 +67,8 @@ export default {
 }
 .header__logo span {
     font-size: 12px;
+}
+.header__left {
+    padding: 25vh 0;
 }
 </style>
