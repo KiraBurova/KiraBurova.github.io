@@ -1,7 +1,7 @@
 <template>
   <section class="about">
       <div class="about__left">
-          <img src="../assets/about.png" alt="">
+          <img src="../assets/img/about.png" alt="">
       </div>
       <div class="about__right">
           <h2 class="about__headline">About the shelter

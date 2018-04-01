@@ -41,7 +41,7 @@ export default {
     box-sizing: border-box;
     min-height: 100vh;
     height: 100vh;
-    background-image: url('../assets/header.png'), url('../assets/background.jpg');
+    background-image: url('../assets/img/header.png'), url('../assets/img/background.jpg');
     background-size: cover;
     background-position: center top;
     margin: 0 auto;
