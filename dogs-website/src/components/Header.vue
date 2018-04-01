@@ -18,6 +18,11 @@
       <section class="header__main">
           <div class="header__left">
               <h1>Now only people <br> need a house </h1>
+              <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida
+                est in porttitor  porttitor. Duis sodales elementum ipsum, vehicula
+                condimentum erat fringilla et.
+                </p>
+                <button class="header__cta">Make a friend</button>
           </div>
           <div class="header__right"></div>
       </section>
@@ -70,8 +75,19 @@ export default {
 }
 .header__logo span {
     font-size: 12px;
+    font-family: 'Arial', sans-serif;
+    color: var(--white);
 }
 .header__left {
     padding: 25vh 0;
+    width: 40%;
+}
+.header__text {
+    color: var(--white);
+    font-family: 'Arial', serif;
+}
+.header__cta {
+    background-color: var(--highlight);
+    font-size: 17px;
 }
 </style>
