@@ -2,7 +2,7 @@
   <header class="header">
     <div class="container">
       <section class="header__top">
-          <a href="" class="header__logo">
+          <a href="#" class="header__logo">
               Cozy House <br>
               <span>Shelter for pets in Boston</span>
           </a>
@@ -43,6 +43,7 @@ export default {
     height: 100vh;
     background-image: url('../assets/header.png'), url('../assets/background.jpg');
     background-size: cover;
+    background-position: center top;
     margin: 0 auto;
 }
 .header__top {
@@ -58,7 +59,7 @@ export default {
     list-style: none;
     margin-right: 35px;
     padding: 8px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 0.125rem solid transparent;
     cursor: pointer;
     color: var(--white)
 }
@@ -66,28 +67,65 @@ export default {
     margin-right: 0;
 }
 .menu__item:hover {
-    border-bottom: 2px solid var(--highlight);
+    border-bottom: 0.125rem solid var(--highlight);
 }
 .header__logo {
-    font-size: 32px;
+    font-size: 2em;
     color: var(--highlight);
     text-align: center;
 }
 .header__logo span {
-    font-size: 12px;
+    font-size: 0.4em;
     font-family: 'Arial', sans-serif;
     color: var(--white);
 }
 .header__left {
     padding: 25vh 0;
-    width: 40%;
+    width: 30%;
 }
 .header__text {
     color: var(--white);
     font-family: 'Arial', serif;
+    padding: 2.8rem 0;
+    line-height: 1.5rem;
 }
 .header__cta {
     background-color: var(--highlight);
-    font-size: 17px;
+    font-size: 1.1em;
+}
+@media (max-width: 1405px) {
+    .header__left {
+        width: 40%;
+    }
+};
+@media (max-width: 980px) {
+    .header__left {
+        width: 100%;
+    }
+};
+@media (max-width: 855px) {
+    .header__top {
+        flex-direction: column
+    }
+};
+@media (max-width: 670px) {
+    .header__left {
+        padding: 10vh 0;
+    }
+    .menu {
+        width: 100%;
+        text-align: center;
+    }
+    .menu__inner {
+        flex-direction: column;
+    }
+    .menu__item:last-child {
+        margin-right: 35px;
+    }
+}
+@media (max-width: 328px) {
+    .header__left {
+        padding: 5vh 0;
+    }
 }
 </style>
