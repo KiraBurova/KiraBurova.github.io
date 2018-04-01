@@ -2,5 +2,7 @@
     --white: #fff;
     --black: #000;
     --highlight: #f1cdb3;
-    --gray: '#545454';
+    --gray: #545454;
+    --background_light: #fafafa;
+    --background_dark: #f6f6f6;
 }
