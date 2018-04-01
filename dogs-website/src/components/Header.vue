@@ -36,13 +36,13 @@ export default {
     box-sizing: border-box;
     min-height: 100vh;
     height: 100vh;
-    background-image: url('../assets/header.png');
+    background-image: url('../assets/header.png'), url('../assets/background.jpg');
     background-size: cover;
     margin: 0 auto;
 }
 .header__top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 25px 0;
 }
@@ -55,6 +55,7 @@ export default {
     padding: 8px;
     border-bottom: 2px solid transparent;
     cursor: pointer;
+    color: var(--white)
 }
 .menu__item:last-child {
     margin-right: 0;
@@ -64,6 +65,8 @@ export default {
 }
 .header__logo {
     font-size: 32px;
+    color: var(--highlight);
+    text-align: center;
 }
 .header__logo span {
     font-size: 12px;
