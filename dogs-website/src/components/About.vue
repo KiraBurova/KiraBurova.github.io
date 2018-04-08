@@ -30,6 +30,9 @@
     .about__right {
         width: 50%;
     }
+    .about__headline {
+        padding-bottom: 40px;
+    }
     .about__text {
         font-family: 'Arial';
         font-weight: 400;
