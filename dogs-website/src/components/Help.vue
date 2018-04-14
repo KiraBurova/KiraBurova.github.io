@@ -1,5 +1,6 @@
 <template>
   <section class="help">
+      <div class="container">
       <h2 class="help__title">Than you can help <br> our shelter</h2>
       <div class="help-grid grid">
           <div class="grid__item">
@@ -38,6 +39,7 @@
               <img src="../assets/icons/sleeping-area.png" alt="" class="grid__img">
               <span class="grid__title">Sleeping area</span>
           </div>
+      </div>
       </div>
   </section>
 </template>

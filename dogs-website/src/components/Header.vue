@@ -9,7 +9,9 @@
           <nav class="header__menu menu">
               <ul class="menu__inner">
                   <li class="menu__item">About the shelter</li>
-                  <li class="menu__item">Our pets</li>
+                  <li class="menu__item">
+                      <router-link to="/pets">Our pets</router-link>
+                  </li>
                   <li class="menu__item">To help the shelter</li>
                   <li class="menu__item">Contact</li>
               </ul>

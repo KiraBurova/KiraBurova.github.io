@@ -26,6 +26,7 @@ html, body {
   margin: 0 auto;
 }
 section {
-  padding: 80px 0;
+  padding: 40px 0;
+  margin: 0 auto;
 }
 </style>
