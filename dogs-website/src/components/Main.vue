@@ -4,6 +4,8 @@
       <app-about></app-about>
       <app-carousel></app-carousel>
       <app-help></app-help>
+      <app-donation></app-donation>
+      <app-footer></app-footer>
     </div>
 </template>
 
@@ -12,6 +14,8 @@ import Header from './Header.vue'
 import About from './About.vue'
 import Carousel from './Carousel.vue'
 import Help from './Help.vue'
+import Donation from './Donation.vue'
+import Footer from './Footer.vue'
 
 export default {
   name: 'mane',
@@ -19,7 +23,9 @@ export default {
     'app-header': Header,
     'app-about': About,
     'app-carousel': Carousel,
-    'app-help': Help
+    'app-help': Help,
+    'app-donation': Donation,
+    'app-footer': Footer
   }
 }
 </script>
