@@ -40,14 +40,14 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style>
 .carousel__wrapper {
   background: var(--background_dark);
   text-align: center;
   padding: 80px 0;
 }
 .carousel {
-  width: 840px;
+  width: 1040px;
   padding: 40px 0;
   margin: 40px auto;
 }
@@ -56,7 +56,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  flex-basis: 250px;
+  flex-basis: 320px!important;
   height: 415px;
   margin-right: 50px;
   background: var(--background_light);
@@ -69,10 +69,24 @@ export default {
 .VueCarousel-slide:hover {
   box-shadow: 0 2px 30px 5px rgba(13, 13, 13, 0.04);
 }
-button.VueCarousel-navigation-button {
-  background:red;
+.carousel button.VueCarousel-navigation-button  {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  border: 0.18rem solid var(--highlight);
+  font-size: 0;
+}
+.VueCarousel-navigation-prev {
+  background-image: url('../assets/icons/long-left-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  left: -40px!important;
+}
+.VueCarousel-navigation-next {
+  background-image: url('../assets/icons/long-right-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  right: -40px!important;
 }
 .carousel__img {
   max-height: 250px;
