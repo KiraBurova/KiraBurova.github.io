@@ -44,11 +44,9 @@ export default {
 .carousel__wrapper {
   background: var(--background_dark);
   text-align: center;
-  padding: 80px 0;
 }
 .carousel {
   width: 1040px;
-  padding: 40px 0;
   margin: 40px auto;
 }
 .VueCarousel-slide {

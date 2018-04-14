@@ -25,4 +25,7 @@ html, body {
   width: 90%;
   margin: 0 auto;
 }
+section {
+  padding: 80px 0;
+}
 </style>
