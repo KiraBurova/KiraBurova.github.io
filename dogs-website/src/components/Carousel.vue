@@ -5,7 +5,7 @@
     <carousel :per-page="3" :navigationEnabled="true" :paginationEnabled="false" :autoplay="false">
       <slide v-for="slide in slides" :key="slide.name">
         <img
-          :src="slide.image"
+          :src="'../assets'+slide.image"
           alt=""
           class="carousel__img">
         <span
@@ -36,6 +36,7 @@ export default {
   },
   beforeMount () {
     const data = require('../assets/pets-data.json')
+    console.log(data)
     this.slides = this.slides.concat(data)
   }
 }

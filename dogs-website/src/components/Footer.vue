@@ -63,4 +63,16 @@
   padding-left: 70px;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 920px) {
+  .footer {
+    background-position: right bottom;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+  }
+  .footer__contact,
+  .footer__address {
+    width: 100%;
+  }
+}
 </style>

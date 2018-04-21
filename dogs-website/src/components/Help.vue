@@ -31,9 +31,9 @@
               <img src="../assets/icons/syringe.png" alt="" class="grid__img">
               <span class="grid__title">Medicines</span>
           </div>
-          <div class="grid__item">
+          <div class="grid__item collars">
               <img src="../assets/icons/leash.png" alt="" class="grid__img">
-              <span class="grid__title">Collars/Leashes</span>
+              <span class="grid__title">Collars / Leashes</span>
           </div>
           <div class="grid__item">
               <img src="../assets/icons/sleeping-area.png" alt="" class="grid__img">
@@ -49,18 +49,60 @@
         text-align: center;
     }
     .grid {
-        padding-top: 50px;
+        padding: 70px 0;
         display: grid;
-        grid-template-rows: 50% 50% auto;
-        grid-template-columns: repeat(5, 185px);
-        grid-column-gap: 100px;
-        grid-row-gap: 70px;
-        justify-items: center;
-        align-items: center;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 80px;
     }
     .grid__item {
+        height: 125px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
+        color: var(--gray);
+        font-size: 1.25rem;
     }
+    .grid__item {
+        grid-column: span 2;
+    }
+    .grid__item:nth-child(1) {
+        grid-column: 2 / span 2;
+    }
+    .grid__item:nth-child(6) {
+        grid-column: 3 / span 2;
+    }
+    .collars {
+        white-space: nowrap;
+    }
+@media screen and (max-width: 935px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    .grid__item,
+    .grid__item:nth-child(1),
+    .grid__item:nth-child(6) {
+        grid-column: span 1;
+    }
+    .grid__item:last-child {
+        grid-column: span 2;
+    }
+}
+@media screen and (max-width: 662px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+@media screen and (max-width: 440px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+@media screen and (max-width: 350px) {
+    .grid__item,
+    .grid__item:nth-child(1),
+    .grid__item:nth-child(6) {
+        grid-column: span 2;
+    }
+}
 </style>
