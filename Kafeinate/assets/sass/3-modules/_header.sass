@@ -22,6 +22,7 @@
 		&__link
 			color: $mercury
 			padding: 0
+			white-space: nowrap
 
 			&:hover,
 			&:focus
@@ -30,7 +31,6 @@
 	&__logo
 		z-index: 1
 
-
 @media (max-width: 610px)
 	.header
 		padding-top: 5px
@@ -38,3 +38,17 @@
 			flex-direction: column
 			align-items: center
 			padding-bottom: 100px
+		&__logo img
+			width: 100px
+
+@media(max-width: 420px)
+	.header .nav
+		flex-direction: column
+		align-items: normal
+
+		&__item
+			margin-right: 0
+
+@media(max-width: 405px)
+	.header
+		padding-bottom: 100px		
