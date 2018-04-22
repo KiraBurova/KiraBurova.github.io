@@ -496,8 +496,6 @@ span {
       background: #faca36; }
       .menu__item:hover > .menu__link {
         color: #0a0a08; }
-  .menu__content {
-    padding-top: 25px; }
   .menu__img {
     width: 100%;
     height: auto; }
@@ -551,7 +549,8 @@ span {
   display: none; }
 
 .wrap.active {
-  display: block; }
+  display: block;
+  margin-top: 10px; }
 
 @media (max-width: 1095px) {
   .menu {
