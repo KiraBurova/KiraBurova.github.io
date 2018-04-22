@@ -4,15 +4,11 @@
   <div class="carousel">
     <carousel :per-page="3" :navigationEnabled="true" :paginationEnabled="false" :autoplay="false">
       <slide v-for="slide in slides" :key="slide.name">
-        <img
-          :src="'../assets'+slide.image"
-          alt=""
-          class="carousel__img">
-        <span
-          class="carousel__name">
-          {{slide.name}}
-        </span>
-        <button>Learn more</button>
+        <animal-panel
+          name="slide"
+          :title="slide.name"
+          :image="slide.image">
+        </animal-panel>
       </slide>
     </carousel>
     </div>
@@ -22,11 +18,13 @@
 
 <script>
 import { Carousel, Slide } from 'vue-carousel'
+import AnimalPanel from '@/components/AnimalPanel'
 
 export default {
   components: {
     Carousel,
-    Slide
+    Slide,
+    AnimalPanel
   },
   data () {
     return {
@@ -36,7 +34,6 @@ export default {
   },
   beforeMount () {
     const data = require('../assets/pets-data.json')
-    console.log(data)
     this.slides = this.slides.concat(data)
   }
 }
@@ -49,18 +46,6 @@ export default {
 .carousel {
   width: 1040px;
   margin: 40px auto;
-}
-.VueCarousel-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-basis: 320px!important;
-  height: 415px;
-  margin-right: 50px;
-  background: var(--background_light);
-  border-radius: 9px;
-  transition: all .3s ease-in-out;
 }
 .VueCarousel-slide:nth-of-type(3n) {
   margin-right: 0;
@@ -86,14 +71,6 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   right: -40px!important;
-}
-.carousel__img {
-  max-height: 250px;
-  width: auto;
-}
-.carousel__name {
-  font-size: 1.25rem;
-  color: var(--gray)
 }
 .carousel__cta {
   background: var(--highlight);

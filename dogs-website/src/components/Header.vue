@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="container">
-      <section class="header__top">
+      <!-- <section class="header__top">
           <a href="#" class="header__logo">
               Cozy House <br>
               <span>Shelter for pets in Boston</span>
@@ -16,7 +16,8 @@
                   <li class="menu__item">Contact</li>
               </ul>
           </nav>
-      </section>
+      </section> -->
+      <TopHeader/>
       <section class="header__main">
           <div class="header__left">
               <h1>Now only people <br> need a house </h1>
@@ -33,11 +34,14 @@
 </template>
 
 <script>
+import TopHeader from '@/components/TopHeader'
 
 export default {
+  components: {
+    TopHeader
+  }
 }
 </script>
-
 <style scoped>
 .header {
     box-sizing: border-box;
@@ -47,39 +51,6 @@ export default {
     background-size: cover;
     background-position: center top;
     margin: 0 auto;
-}
-.header__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 0;
-}
-.menu__inner {
-    display: flex;
-}
-.menu__item {
-    list-style: none;
-    margin-right: 35px;
-    padding: 8px;
-    border-bottom: 0.125rem solid transparent;
-    cursor: pointer;
-    color: var(--white)
-}
-.menu__item:last-child {
-    margin-right: 0;
-}
-.menu__item:hover {
-    border-bottom: 0.125rem solid var(--highlight);
-}
-.header__logo {
-    font-size: 2em;
-    color: var(--highlight);
-    text-align: center;
-}
-.header__logo span {
-    font-size: 0.4em;
-    font-family: 'Arial', sans-serif;
-    color: var(--white);
 }
 .header__left {
     padding: 25vh 0;
