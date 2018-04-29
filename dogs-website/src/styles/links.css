@@ -1,3 +1,9 @@
 a {
     text-decoration: none;
 }
+a:focus {
+    color: var(--light_gray); 
+}
+a:visited {
+    color: var(--light_gray);
+}

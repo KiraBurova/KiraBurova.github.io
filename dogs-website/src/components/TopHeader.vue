@@ -1,9 +1,9 @@
 <template>
     <section class="header-top">
-        <a href="#" class="header__logo">
+        <router-link to="/" class="header__logo">
             Cozy House <br>
             <span>Shelter for pets in Boston</span>
-        </a>
+        </router-link>
         <nav class="header__menu menu">
             <ul class="menu__inner">
                 <li class="menu__item">About the shelter</li>
