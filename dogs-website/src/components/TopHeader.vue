@@ -45,6 +45,7 @@
     font-size: 2em;
     color: var(--highlight);
     text-align: center;
+    line-height: 1.5rem;
 }
 .header__logo span {
     font-size: 0.4em;
