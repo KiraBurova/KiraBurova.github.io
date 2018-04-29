@@ -22,12 +22,15 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  flex-basis: 320px!important;
+  flex-basis: 320px;
   height: 415px;
   margin-right: 50px;
   background: var(--background_light);
   border-radius: 9px;
   transition: all .3s ease-in-out;
+}
+.panel:hover {
+  box-shadow: 0 2px 30px 5px rgba(13, 13, 13, 0.04);
 }
 .panel__img {
   width: 270px;

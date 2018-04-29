@@ -1,22 +1,6 @@
 <template>
   <header class="header">
     <div class="container">
-      <!-- <section class="header__top">
-          <a href="#" class="header__logo">
-              Cozy House <br>
-              <span>Shelter for pets in Boston</span>
-          </a>
-          <nav class="header__menu menu">
-              <ul class="menu__inner">
-                  <li class="menu__item">About the shelter</li>
-                  <li class="menu__item">
-                      <router-link to="/pets">Our pets</router-link>
-                  </li>
-                  <li class="menu__item">To help the shelter</li>
-                  <li class="menu__item">Contact</li>
-              </ul>
-          </nav>
-      </section> -->
       <TopHeader/>
       <section class="header__main">
           <div class="header__left">

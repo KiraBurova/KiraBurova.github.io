@@ -51,4 +51,42 @@
     font-family: 'Arial', sans-serif;
     color: var(--white);
 }
+
+@media screen and (max-width: 855px) {
+    .header-top {
+        justify-content: space-around;
+    }
+    .menu__inner {
+        padding: 0;
+        margin: 0;
+    }
+    .menu__item {
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 725px) {
+    .header-top {
+        flex-direction: column;
+    }
+    .menu__inner {
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 535px) {
+    .header-top {
+        align-items: stretch;
+    }
+    .menu__inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu__item {
+        margin-right: 0;
+        margin-bottom: 5px;
+        background: var(--white);
+        color: var(--black);
+        box-shadow: 0 2px 30px 5px rgba(13, 13, 13, 0.04);
+    }
+}
 </style>

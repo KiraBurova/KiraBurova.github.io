@@ -50,9 +50,6 @@ export default {
 .VueCarousel-slide:nth-of-type(3n) {
   margin-right: 0;
 }
-.VueCarousel-slide:hover {
-  box-shadow: 0 2px 30px 5px rgba(13, 13, 13, 0.04);
-}
 .carousel button.VueCarousel-navigation-button  {
   width: 50px;
   height: 50px;
