@@ -9,11 +9,12 @@
             :per="8"
            >
             <div class="pets__main">
-              <animal-panel  v-for="pet in paginated('pets')" :key="pet.name" :title="pet.name" :image="pet.image"></animal-panel>
+              <animal-panel v-for="pet in paginated('pets')" :key="pet.name" :title="pet.name" :image="pet.image"></animal-panel>
             </div>
           </paginate>
     </div>
     <paginate-links for="pets" :limit="3"></paginate-links>
+    <app-modal v-if="this.$store.state.openModal"></app-modal>
     <app-footer></app-footer>
   </section>
 </template>
@@ -22,11 +23,13 @@
 import TopHeader from '@/components/TopHeader'
 import Footer from '@/components/Footer'
 import AnimalPanel from '@/components/AnimalPanel'
+import Modal from '@/components/Modal'
 
 export default {
   components: {
     'app-top-header': TopHeader,
     'app-footer': Footer,
+    'app-modal': Modal,
     AnimalPanel
   },
   data () {
@@ -38,12 +41,11 @@ export default {
   },
   methods: {
     fetchPhotos () {
-      const data = require('../assets/pets-data.json')
-      this.pets = this.pets.concat(data)
+      this.$store.dispatch('fetchPets').then(() => { this.pets = this.$store.state.pets })
     }
   },
   created: function () {
-    this.fetchPhotos(this.currentPage)
+    this.fetchPhotos()
     this.show = true
   }
 }

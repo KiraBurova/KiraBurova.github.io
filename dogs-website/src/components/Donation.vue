@@ -36,9 +36,10 @@
   box-sizing: border-box;
   width: 80%;
   background: var(--highlight);
-  background-image: url('../assets/icons/credit-card.png');
+  background-image: url('../assets/icons/credit-card.svg');
   background-repeat: no-repeat;
   background-position: 15px center;
+  background-size: contain;
   font-size: 0.8em;
   font-family: 'Georgia', serif;
   padding: 10px 20px 10px 60px;

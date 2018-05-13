@@ -44,7 +44,8 @@
 .address__usa {
   height: 36px;
   padding-left: 70px;
-  background-image: url('../assets/icons/pin.png');
+  background-image: url('../assets/icons/pin.svg');
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .address__usa {
@@ -52,14 +53,16 @@
 }
 .contact__email {
   height: 40px;
-  background-image: url('../assets/icons/envelope.png');
+  background-image: url('../assets/icons/envelope.svg');
   background-repeat: no-repeat;
+  background-size: contain;
   padding-left: 70px;
 }
 .contact__phone {
   height: 40px;
-  background-image: url('../assets/icons/telephone.png');
+  background-image: url('../assets/icons/telephone.svg');
   background-repeat: no-repeat;
+  background-size: contain;
   padding-left: 70px;
   margin-bottom: 25px;
 }

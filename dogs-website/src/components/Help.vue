@@ -4,39 +4,39 @@
       <h2 class="help__title">Than you can help <br> our shelter</h2>
       <div class="help-grid grid">
           <div class="grid__item">
-              <img src="../assets/icons/cat-food.png" alt="" class="grid__img">
+              <img src="../assets/icons/cat-food.svg" alt="" class="grid__img">
               <span class="grid__title">Pet food</span>
           </div>
           <div class="grid__item">
-              <img src="../assets/icons/ambulance.png" alt="" class="grid__img">
+              <img src="../assets/icons/ambulance.svg" alt="" class="grid__img">
               <span class="grid__title">Transporation</span>
           </div>
           <div class="grid__item">
-              <img src="../assets/icons/ball.png" alt="" class="grid__img">
+              <img src="../assets/icons/ball.svg" alt="" class="grid__img">
               <span class="grid__title">Toys</span>
           </div>
           <div class="grid__item">
-              <img src="../assets/icons/bowl.png" alt="" class="grid__img">
+              <img src="../assets/icons/bowl.svg" alt="" class="grid__img">
               <span class="grid__title">Bowls and cups</span>
           </div>
           <div class="grid__item">
-              <img src="../assets/icons/shampoo.png" alt="" class="grid__img">
+              <img src="../assets/icons/shampoo.svg" alt="" class="grid__img">
               <span class="grid__title">Shampoos</span>
           </div>
           <div class="grid__item">
-              <img src="../assets/icons/pills.png" alt="" class="grid__img">
+              <img src="../assets/icons/pills.svg" alt="" class="grid__img">
               <span class="grid__title">Vitamins</span>
           </div>
           <div class="grid__item">
-              <img src="../assets/icons/syringe.png" alt="" class="grid__img">
+              <img src="../assets/icons/syringe.svg" alt="" class="grid__img">
               <span class="grid__title">Medicines</span>
           </div>
           <div class="grid__item collars">
-              <img src="../assets/icons/leash.png" alt="" class="grid__img">
+              <img src="../assets/icons/leash.svg" alt="" class="grid__img">
               <span class="grid__title">Collars / Leashes</span>
           </div>
           <div class="grid__item">
-              <img src="../assets/icons/sleeping-area.png" alt="" class="grid__img">
+              <img src="../assets/icons/cat.svg" alt="" class="grid__img">
               <span class="grid__title">Sleeping area</span>
           </div>
       </div>
@@ -62,6 +62,10 @@
         justify-content: space-around;
         color: var(--gray);
         font-size: 1.25rem;
+    }
+    .grid__img {
+        width: 100px;
+        height: 100px;
     }
     .grid__item {
         grid-column: span 2;

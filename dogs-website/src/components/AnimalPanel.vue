@@ -6,13 +6,33 @@
           class="panel__name">
           {{title}}
         </span>
-        <button>Learn more</button>
+        <button @click="openModal($event)">Learn more</button>
       </slot>
   </div>
 </template>
 <script>
+import Modal from '@/components/Modal'
+
 export default {
-  props: ['title', 'image']
+  data () {
+    return {
+      activePet: null
+    }
+  },
+  components: {
+    'app-modal': Modal
+  },
+  props: ['title', 'image'],
+  methods: {
+    openModal (event) {
+      this.$store.state.pets.filter((pet) => {
+        if (pet.name === event.target.parentNode.children[1].innerText) {
+          this.activePet = pet
+        }
+      })
+      this.$store.commit('openModal', this.activePet)
+    }
+  }
 }
 </script>
 
